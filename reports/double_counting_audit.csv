@@ -1,0 +1,3 @@
+side,row,item,name,issues
+discharge,39,19,Codo  Soldado 90 (Radio Largo),DUAL_ENTRY: row has both Leq formula loss and pressure entry
+discharge,40,20,Codo Soldado 45 ( Radio Largo),ZERO_QUANTITY_PRESSURE: pressure entry with zero quantity count

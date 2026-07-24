@@ -1,0 +1,11 @@
+side,row,item,name,loss_ft,pct_of_total,cumulative_pct,method
+suction,6,1,Valvula de Compuerta 100% Abierta,0.01682488888888889,100.0,100.0,LEQ_OVER_D
+suction,7,2,Valvula de Compuerta 1/2 Cerrada,0.0,0.0,100.0,LEQ_OVER_D
+suction,8,3,Valvula de Compuerta 3/4 Cerrada,0.0,0.0,100.0,LEQ_OVER_D
+suction,9,2,Valvula de Globo 100% Abierta,0.0,0.0,100.0,LEQ_OVER_D
+suction,10,3,Valvula de Globo  1/2 Cerrada,0.0,0.0,100.0,LEQ_OVER_D
+suction,11,2,Valvula de Globo de Retencion (Check),0.0,0.0,100.0,LEQ_OVER_D
+suction,12,3,Valvula de Globo Vertical de Retencion,0.0,0.0,100.0,LEQ_OVER_D
+suction,13,4,Valvula de Angulo,0.0,0.0,100.0,LEQ_OVER_D
+suction,14,5,Valvula de angulo de Retencion,0.0,0.0,100.0,LEQ_OVER_D
+suction,15,6,Valvula Check de Balancin,0.0,0.0,100.0,LEQ_OVER_D

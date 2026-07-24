@@ -1,0 +1,16 @@
+component,cell,unit,formula,excel,legacy,validated,excel_to_validated,notes
+Static Suction Head (ft),C9,ft,=500/304.8,1.640420,1.640420,1.640400,-0.000020 (-0.00%),
+Suction Fitting Losses (ft),C11,ft,='TABLA DE ACCESORIOS SUCCION'!I40,0.016825,0.016800,0.016800,-0.000025 (-0.15%),LP uses hardcoded input
+Suction Pipe Losses (ft),C14,ft,=C12*C13,0.026105,0.026105,0.008347,-0.017758 (-68.03%),
+Total Suction Losses (ft),C11+C14,ft,=C11+C14,N/A,0.042905,0.025147,N/A,
+Static Head Difference (ft),C21,ft,=C20-C9,5.279580,5.279580,5.280000,+0.000420 (+0.01%),
+Discharge Fitting Losses (ft),C24,ft,='TABLA DE ACCESORIOS DESCARGA'!I41,188.558615,188.560000,188.560000,+0.001385 (+0.00%),LP uses hardcoded input
+Discharge Pipe Losses (ft),C26,ft,=RAMALES!F19,1.669989,1.670000,1.257496,-0.412493 (-24.70%),LP uses hardcoded input
+Total Dynamic Head (ft),C28,ft,=C11+C14+C21+C24+C26,195.551113,195.552900,195.550000,-0.001113 (-0.00%),LP uses hardcoded input
+Total Dynamic Head (m),E24,m,=C28*0.3048,59.603979,59.604524,59.600000,-0.003979 (-0.01%),LP uses hardcoded input
+NPSH Available (ft),E14,ft,=((C8+E8)*(2.31/E11))+C9-C11-C14-E9,33.879390,33.879438,34.800000,+0.920610 (+2.72%),LP uses hardcoded input
+Hydraulic Power (HP),E20,hp,=(E4*C28*E11)/3960,37.858276,37.858622,37.860000,+0.001724 (+0.00%),LP uses hardcoded input
+Shaft Power (HP),E21,hp,=E20/C22,52.580939,52.581419,52.580000,-0.000939 (-0.00%),LP uses hardcoded input
+Shaft Power (kW),E22,kW,=E21*0.7456,39.204348,39.204706,39.200000,-0.004348 (-0.01%),LP uses hardcoded input
+Torque (lb-ft),E23,lb-ft,=(E21*5252)/1700,162.444170,162.445655,162.500000,+0.055830 (+0.03%),LP uses hardcoded input
+Specific Speed (legacy),E27,-,=(C29*(E4^0.5))/(E24^0.75),4658.352841,4658.320921,4658.000000,-0.352841 (-0.01%),LP uses hardcoded input

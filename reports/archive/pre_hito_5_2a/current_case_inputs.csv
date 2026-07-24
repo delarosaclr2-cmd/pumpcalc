@@ -1,0 +1,56 @@
+Variable,Value,Unit,Sheet,Cell,Data Type,Origin,Confidence,Observation
+Caudal Normal,770.5,GPM,CAIDA PRESION DE TUBERIA,G5,USER_INPUT,Process datasheet,HIGH,Base flow for sizing
+Caudal de Diseño,770.5,GPM,CALCULO DE BOMBA,E4,DERIVED_INPUT,=G5 (no depreciation),HIGH,B15=0% depreciation
+Densidad,62,lbm/ft³,CAIDA PRESION DE TUBERIA,G9,LOOKUP,OUTPIPES table (Item 6: Agua Blanca),HIGH,Mass density not SG
+Gravedad Específica,0.995,-,CALCULO DE BOMBA,E11,LOOKUP,gravedadespecifica table (Item 9, 95°F),HIGH,At operating temperature
+Viscosidad Dinámica,0.52,cP,CAIDA PRESION DE TUBERIA,G10,LOOKUP,OUTPIPES table (Item 6),HIGH,
+Temperatura Operación,95,°F,IMPLIED,DESIGN_INPUT,gravedadespecifica/presionvapor Item 9,HIGH,Matches SG=0.995, Pvap=0.8 psia
+Presión Vapor Absoluta,0.8,psia,VELOCIDADES RECOMENDADAS,AA13,LOOKUP,presionvapor table,HIGH,Absolute pressure
+Presión Vapor Head,1.846,ft water,VELOCIDADES RECOMENDADAS,AB13,DERIVED,=AA13*3.2808/1.422,HIGH,ft water absolute
+Presión Atmosférica,14.7,psia,CALCULO DE BOMBA,C8,ASSUMPTION,Standard sea level,MEDIUM,No altitude correction
+Presión Recipiente,0,psig,CALCULO DE BOMBA,E8,DESIGN_INPUT,Open tank assumption,HIGH,Gauge pressure (0 psig = 14.7 psia)
+Elevación Estática Succión,1.64,ft,CALCULO DE BOMBA,C9,DESIGN_INPUT,=500/304.8 (500 mm),UNVERIFIED,Hardcoded; needs drawing verification
+Nivel Mínimo Operación,1.64,ft,CALCULO DE BOMBA,E10,DESIGN_INPUT,Hardcoded,UNVERIFIED,Same as static head?
+Longitud Tubería Succión,6.96,ft,CALCULO DE BOMBA,C12,DESIGN_INPUT,=2.12*3.281 (2.12 m),UNVERIFIED,Hardcoded; needs piping layout
+Diámetro Nominal Succión,10,in,CAIDA PRESION DE TUBERIA,V12,USER_INPUT,Pipe schedule table,HIGH,
+Rugosidad Absoluta Succión,0.00012,ft,CAIDA PRESION DE TUBERIA,V14,LOOKUP,RUGOSIDAD table (Item 1: Acero Inox),HIGH,Stainless steel
+Diámetro Nominal Descarga,6,in,CAIDA PRESION DE TUBERIA,G12,USER_INPUT,Pipe schedule table,HIGH,
+Rugosidad Absoluta Descarga,0.00012,ft,CAIDA PRESION DE TUBERIA,G14,LOOKUP,RUGOSIDAD table (Item 1: Acero Inox),HIGH,Stainless steel
+Diámetro Interior Calculado Descarga,6.048,in,CAIDA PRESION DE TUBERIA,G8,DERIVED,=G7*√(G5/G6),HIGH,
+Diámetro Interior Calculado Succión,10.042,in,CAIDA PRESION DE TUBERIA,V8,DERIVED,=V7*√(V5/V6),HIGH,
+Número Reynolds Descarga,768553,-,CAIDA PRESION DE TUBERIA,G11,DERIVED,=50.6*G5*G9/(G8*G10),HIGH,
+Número Reynolds Succión,462915,-,CAIDA PRESION DE TUBERIA,V11,DERIVED,=50.6*V5*V9/(V8*V10),HIGH,
+Régimen Flujo Descarga,Turbulent,-,-,-,Re > 4000,HIGH,
+Régimen Flujo Succión,Turbulent,-,-,-,Re > 4000,HIGH,
+Factor Fricción Descarga (usado),0.0272,-,CAIDA PRESION DE TUBERIA,G17,HARDCODED,CPL constant,LOW,⚠️ Should use Moody
+Factor Fricción Succión (usado),0.000138,-,CAIDA PRESION DE TUBERIA,V16,DERIVED,=64/Re (laminar),ERROR,⚠️ WRONG: turbulent flow
+Pérdida Fricción/L Descarga,0.0445,ft/ft,CAIDA PRESION DE TUBERIA,G19,DERIVED,DW hybrid formula,MEDIUM,⚠️ Uses hardcoded f
+Pérdida Fricción/L Succión,0.00375,ft/ft,CAIDA PRESION DE TUBERIA,V19,DERIVED,DW hybrid formula,MEDIUM,⚠️ Uses laminar f
+Pérdidas Accesorios Succión,0.0168,ft,CALCULO DE BOMBA,C11,LOOKUP,=TABLA SUCCION!I40,HIGH,
+Pérdidas Tubería Succión,0.0261,ft,CALCULO DE BOMBA,C14,DERIVED,=C12*C13,HIGH,
+Pérdidas Accesorios Descarga,188.56,ft,CALCULO DE BOMBA,C24,LOOKUP,=TABLA DESCARGA!I41,HIGH,
+Longitud Ramal Descarga,36,ft,CALCULO DE BOMBA,C25,LOOKUP,=RAMALES!F18,HIGH,
+Pérdidas Ramal Descarga,1.67,ft,CALCULO DE BOMBA,C26,LOOKUP,=RAMALES!F19,HIGH,
+Carga Estática Total,5.28,ft,CALCULO DE BOMBA,C21,DERIVED,=C20-C9 (6.92-1.64),HIGH,
+TDH,195.55,ft,CALCULO DE BOMBA,C28,DERIVED,=C11+C14+C21+C24+C26,HIGH,⚠️ Uses questionable f factors
+TDH,59.60,m,CALCULO DE BOMBA,E24,DERIVED,=C28*0.3048,HIGH,
+NPSH Disponible,33.88,ft,CALCULO DE BOMBA,E14,DERIVED,=((C8+E8)*2.31/E11)+C9-C11-C14-E9,HIGH,⚠️ E9 needs /E11
+NPSH Disponible,10.33,m,RESUMEN PARA PDF,G25,DERIVED,=E14/3.281,HIGH,
+Potencia Hidráulica,37.86,HP,CALCULO DE BOMBA,E20,DERIVED,=(E4*C28*E11)/3960,HIGH,
+Potencia al Freno,52.58,HP,CALCULO DE BOMBA,E21,DERIVED,=E20/C22,HIGH,
+Potencia al Freno,39.20,kW,CALCULO DE BOMBA,E22,DERIVED,=E21*0.7456,HIGH,
+Torque,162.44,lb-ft,CALCULO DE BOMBA,E23,DERIVED,=(E21*5252)/1700,HIGH,
+Eficiencia Bomba,0.72,-,CALCULO DE BOMBA,C22,USER_INPUT,User input,MEDIUM,
+Factor de Servicio,1.0,-,CALCULO DE BOMBA,C6,USER_INPUT,User input,MEDIUM,
+RPM Bomba,3600,rpm,CALCULO DE BOMBA,C29,USER_INPUT,User input,MEDIUM,
+Velocidad Específica (Ns),4658,-,CALCULO DE BOMBA,E27,DERIVED,=(C29*√E4)/E24^0.75,LOW,⚠️ E24 in meters, should use ft
+Flujo Nominal,770.5,GPM,RESUMEN PARA PDF,B13,OUTPUT,=CAIDA!V5,HIGH,
+Flujo de Diseño,770.5,GPM,RESUMEN PARA PDF,B16,OUTPUT,=B13+B15,HIGH,
+TDH Requerido,195.55,ft,RESUMEN PARA PDF,B28,OUTPUT,=SUM losses + static,HIGH,
+TDH Requerido,84.65,psi,RESUMEN PARA PDF,D28,OUTPUT,=B28/2.31,HIGH,
+TDH Requerido,59.60,m,CALCULO DE BOMBA,E24,OUTPUT,=C28*0.3048,HIGH,
+NPSH Disponible,33.88,ft,RESUMEN PARA PDF,G25,OUTPUT,=CALCULO!E14,HIGH,
+NPSH Disponible,10.33,m,005PU001,H10,OUTPUT,=G25/3.281,HIGH,
+Potencia al Freno,52.58,HP,RESUMEN PARA PDF,G29,OUTPUT,=CALCULO!E21,HIGH,
+Tipo de Impulsor,FLUJO MIXTO,-,CALCULO DE BOMBA,E29,LOOKUP,TIPOIMPULSOR table (Item 15),MEDIUM,
+Eficiencia,72%,-,CALCULO DE BOMBA,C22,USER_INPUT,User input,MEDIUM,

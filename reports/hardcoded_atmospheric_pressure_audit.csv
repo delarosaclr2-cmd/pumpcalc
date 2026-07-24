@@ -1,0 +1,127 @@
+file,line,context,classification,production_code,allowed,justification,replacement,status
+reports\generate_hito_5_4a_reports.py,22,"'| Atmospheric pressure (psia) | 14.7 |',",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_reports.py,25,"'| Source boundary absolute pressure (psia) | 14.7 |',",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_reports.py,34,"res = required_boundary_pressure_head(val, ref, 14.7, SG)",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_reports.py,71,"res = required_boundary_pressure_head(79.77, ref, 14.7, SG)",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_reports.py,79,"'- **ABSOLUTE**: difference = 79.77 - 14.7 = 65.07 psi, head = 150.92 ft',",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_reports.py,99,"'| atmospheric_pressure_psia | 14.7 (sea level) |',",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_reports.py,102,"'| computed_source_abs_psia | 14.7 |',",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_reports.py,122,"'`source_abs = 14.7 + 0.0 = 14.7 psia`',",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_reports.py,149,"'   - D (ABSOLUTE): now calculable using source boundary (14.7 psia)',",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_updates.py,57,f'3. **D (Absolute)**: Now calculable with source boundary (14.7 psia). Differen,TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_updates.py,119,"'3. VALIDATED_U40_AS_ABSOLUTE now calculable with source boundary (14.7 psia)',",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_updates.py,189,"'- Atmospheric pressure: 14.7 psia',",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_updates.py,191,"'- Computed source_abs: 14.7 psia',",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_updates.py,201,"'- Source: 14.7 psia',",TEST_FIXTURE,no,yes,,,OK
+reports\generate_hito_5_4a_updates.py,261,'- D (ABSOLUTE): uses source_boundary_absolute_pressure_psia = 14.7 (computed fr,TEST_FIXTURE,no,yes,,,OK
+reports\archive\pre_hito_5_2a\input_loader.py,76,atmospheric_pressure_psi: float = 14.7,TEST_FIXTURE,no,yes,,,OK
+reports\archive\pre_hito_5_2a\input_loader.py,129,"atmospheric_pressure_psi=14.7,",TEST_FIXTURE,no,yes,,,OK
+reports\archive\pre_hito_5_2a\legacy_calculator.py,110,"C8=14.7, E8=0, E11=0.995, C9=1.64, C11=0.0168, C14=0.0261, E9=1.8457",TEST_FIXTURE,no,yes,,,OK
+reports\archive\pre_hito_5_2a\legacy_calculator.py,111,npsha_ft = ((14.7 + 0.0) * 2.31 / 0.995) + 1.6404 - 0.0168 - 0.0261 - 1.8457,TEST_FIXTURE,no,yes,,,OK
+reports\archive\pre_hito_5_2a\npsh.py,170,"p_atm_abs_psi=14.7,",TEST_FIXTURE,no,yes,,,OK
+reports\archive\pre_hito_5_2a\npsh.py,189,"p_atm_psi=14.7,",TEST_FIXTURE,no,yes,,,OK
+reports\archive\pre_hito_5_2a\npsh.py,206,"""pressure_term"": (14.7 + 0.0) * 2.31 / 0.995,",TEST_FIXTURE,no,yes,,,OK
+reports\archive\pre_hito_5_2a\validated_calculator.py,142,"p_atm_abs_psi=14.7,",TEST_FIXTURE,no,yes,,,OK
+scripts\analyze_hydraulic_equations.py,17,"14.7: ""Standard atmospheric pressure (psi)"",",DOCUMENTATION_EXAMPLE,no,yes,,,OK
+scripts\classify_cells.py,159,"if val in [14.7, 2.31, 3960, 0.7456, 5252, 1700, 50.6, 2.3071, 32.4, 448.8309, 3",DOCUMENTATION_EXAMPLE,no,yes,,,OK
+scripts\create_corrections_report.py,41,"""previous_evidence"": ""C8=14.7 psia, E8=0 psig; formula (C8+E8)*2.31/SG"",",DOCUMENTATION_EXAMPLE,no,yes,,,OK
+scripts\create_corrections_report.py,42,"""new_derivation"": ""Standard NPSH: P_abs = Patm_abs + Pvessel_gauge. For open tan",DOCUMENTATION_EXAMPLE,no,yes,,,OK
+scripts\generate_preliminary_findings.py,36,"""evidence"": ""Formula: =((C8+E8)*(2.31/E11))+C9-C11-C14-E9. C8=14.7 psia (atmosph",DOCUMENTATION_EXAMPLE,no,yes,,,OK
+scripts\generate_preliminary_findings.py,37,"""possible_impact"": ""NPSHa calculation may be wrong. If E8 is gauge, should not a",DOCUMENTATION_EXAMPLE,no,yes,,,OK
+scripts\sensitivity_analysis.py,21,"'atm_psi': [13.0, 14.0, 14.7, 15.5, 16.0],",DOCUMENTATION_EXAMPLE,no,yes,,,OK
+scripts\update_preliminary_findings.py,40,"""evidence"": ""E14 = ((C8+E8)*(2.31/E11)) + C9 - C11 - C14 - E9. C8=14.7 psia, E8=",DOCUMENTATION_EXAMPLE,no,yes,,,OK
+tests\integration\test_integrity.py,112,"""""""Surface pressure head should be ~34 ft for water at 14.7 psi.""""""",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,80,"balances = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=1",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,116,"balances = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=1",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,148,"""""""Absolute pressure scenario is calculable using source boundary (14.7 psia).""""",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,149,"balances = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=1",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,155,"self.assertAlmostEqual(d[""source_boundary_absolute_pressure_psia""], 14.7, places",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,156,Difference should be 79.77 - 14.7 = 65.07 psi,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,252,"balances = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=1",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,262,"balances = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=1",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,286,"balances = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=1",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,325,"atmospheric_pressure_psia=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,335,"self.assertEqual(sb.atmospheric_pressure_psia, 14.7)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,358,"source_boundary_abs_psia=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,364,"self.assertEqual(res.source_boundary_abs_psia, 14.7)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,375,ATM = 14.7,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,378,"""""""GAUGE: source_abs = atm + vessel_pressure (0 psig → 14.7 psia).""""""",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,384,"self.assertAlmostEqual(result, 14.7, places=4)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,418,SOURCE_ABS = 14.7,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,419,DEST_ATM = 14.7,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,423,"Current case: (14.7 + 79.77) - 14.7 = 79.77 psi (coincides with old rule).""""""",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,440,"""""""ABSOLUTE: dest_abs = value, diff = dest_abs - source_abs (79.77 - 14.7 = 65.0",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,485,"source_boundary_abs_psia=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,494,"""Should allow negative pressure differences (10 psia < 14.7 psia)"",",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,505,"balances = build_semantic_tdh_balances(sg=self.SG, source_atmospheric_pressure_p",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,513,79.77 - 14.7 = 65.07 psi diff,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,515,"self.assertAlmostEqual(d[""source_boundary_absolute_pressure_psia""], 14.7, places",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,525,"balances = build_semantic_tdh_balances(sg=self.SG, source_atmospheric_pressure_p",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4.py,542,"balances = build_semantic_tdh_balances(sg=self.SG, source_atmospheric_pressure_p",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,26,ATM_14_7 = 14.7,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,31,"""""""Test 1: No 14.7 hardcoded in production modules.""""""",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,45,if '14.7' in stripped:,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,51,This test should fail — 14.7 should only be in tests/fixtures,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,52,"self.assertTrue(False, f'14.7 found in production:\n' + '\n'.join(msg))",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,63,"The value in the dataset is 14.7, but must come from inputs",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,64,"self.assertAlmostEqual(inputs.atmospheric_pressure_psia, 14.7, places=1)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,76,"atm_147 = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=14",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,90,Case: source at 0 psig with atm=14.7 → source_abs=14.7,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,93,diff_147 = (14.7 + 79.77) - 14.7 = 79.77,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,97,"source_boundary_abs_psia=14.7, specific_gravity=SG,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,98,"destination_atmospheric_pressure_psia=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,115,SOURCE_ABS = 14.7,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,116,DEST_ATM = 14.7,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,143,"self.assertAlmostEqual(res.pressure_difference_psi, 79.77 - 14.7, places=4)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,161,"""""""Open vessel at 0 psig with atm 14.7 → source_abs = 14.7 psia.""""""",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,163,"atmospheric_pressure_psia=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,167,"self.assertAlmostEqual(result, 14.7, places=4)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,170,"""""""Vessel at 10 psig with atm 14.7 → source_abs = 24.7 psia.""""""",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,172,"atmospheric_pressure_psia=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,183,SOURCE_10PSIG = 24.7  # 14.7 + 10,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,192,"destination_atmospheric_pressure_psia=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,194,dest_abs = 14.7 + 79.77 = 94.47,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,216,"balances = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=1",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,222,"balances = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=1",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,246,"balances = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=1",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,287,"""""""AST-based check: CASE_SPECIFIC_VALUE for any non-fixture 14.7.""""""",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,304,if abs(node.value - 14.7) < 0.01:,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,308,"self.assertTrue(False, f'Hardcoded 14.7 found in production:\n{msg}')",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,315,"balances = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=1",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,344,"balances = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=1",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,360,"""""""Current case loads 14.7 from JSON, not from source code.""""""",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,364,"self.assertAlmostEqual(inputs.atmospheric_pressure_psia, 14.7, places=1)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,369,"self.assertAlmostEqual(raw['atmospheric_pressure_psia'], 14.7, places=1)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,424,"NPSHInputs(p_atm_abs_psi=14.7, specific_gravity=0.0)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,426,"NPSHInputs(p_atm_abs_psi=14.7, specific_gravity=-0.5)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,433,"""""""units.py has no hardcoded 14.7 beyond conversion examples.""""""",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,440,if abs(node.value - 14.7) < 0.01:,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,445,self.fail(f'14.7 found in units.py outside __main__ at line {node.lineno}'),TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,467,Should NOT have a default of 14.7 (and not be None either),TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,468,"self.assertIsNot(param.default, 14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,469,"msg=""atmospheric_pressure_psia should not default to 14.7"")",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,470,"Ideally it should be required (no default), or at least not 14.7",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,474,"self.assertNotAlmostEqual(float(param.default), 14.7, places=1,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,475,"msg=""atmospheric_pressure_psia should not default to 14.7"")",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_hito_5_4b.py,550,"balances = build_semantic_tdh_balances(sg=SG, source_atmospheric_pressure_psia=1",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,21,"p_atm_abs_psi=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,39,"p_atm_psi=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,54,"""pressure_term"": (14.7 + 0.0) * 2.31 / 0.995,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,75,"Excel values: C8=14.7, E8=0, E11=0.995, C9=1.64, C11=0.0168, C14=0.0261, E9=1.84",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,78,"p_atm_psi=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,92,patm = 14.7,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,101,"legacy = npsha_legacy(14.7, 0.0, 0.995, 1.64, 0.0168, 0.0261, 1.846)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,124,p_abs = 14.7  # psia,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,126,head = 14.7 * 2.3067 / 0.995  # Using 2.3067 ft/psi,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,127,expected = 14.7 * 2.3067 / 0.995,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,130,head_231 = 14.7 * 2.31 / 0.995,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,152,"p_atm_abs_psi=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,166,"p_atm_abs_psi=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,167,"p_vessel=14.7,  # same as atm",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,186,"p_atm_abs_psi=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,198,Vacuum subtracts from atmospheric: 14.7 - 5.0 = 9.7 psia,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,201,expected_p_surface = 14.7 - 5.0  # 9.7 psia,TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_npsh.py,212,"p_atm_abs_psi=14.7,",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_units.py,52,"self.assertAlmostEqual(psi_to_pa(14.7), 101353, places=0)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_units.py,63,"self.assertAlmostEqual(psi_to_ft_h2o(14.7), 33.91, places=2)",TEST_FIXTURE,no,yes,,,OK
+tests\unit\test_units.py,68,"self.assertAlmostEqual(ft_h2o_to_psi(33.91), 14.7, places=1)",TEST_FIXTURE,no,yes,,,OK

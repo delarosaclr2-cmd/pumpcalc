@@ -1,0 +1,3 @@
+method,description,surface_to_surface_tdh_ft,flange_to_flange_tdh_ft,flange_input_status,partial_geometric_kinetic_difference_ft,workbook_formula
+surface_to_surface,Between free surfaces (no velocity head),195.13099790928158,MISSING,TDH_FLANGE_NOT_CALCULABLE,6.278542620876552,C11+C14+C21+C24+C26
+flange_to_flange,Between pump flanges (requires pressure data),MISSING,MISSING,TDH_FLANGE_NOT_CALCULABLE,6.278542620876552,(P_disch-P_suct)/γ + (Vd²-Vs²)/2g + (zd-zs) — not calculable without flange pressures

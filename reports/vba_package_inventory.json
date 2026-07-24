@@ -1,0 +1,2827 @@
+{
+  "file": "C:\\PUMPCALC\\original\\KEETP-60-DM-008 - HOJA DE ESPECIFICACIÓN BOMBA 005PU001 REV C (1).xlsm",
+  "inspection_time": "2026-07-20T13:54:32.783063",
+  "vba_modules": [],
+  "vba_code": {},
+  "package_contents": [
+    {
+      "name": "[Content_Types].xml",
+      "size": 17248,
+      "compressed_size": 1061,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3960500402
+    },
+    {
+      "name": "_rels/.rels",
+      "size": 735,
+      "compressed_size": 258,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1706974739
+    },
+    {
+      "name": "xl/workbook.xml",
+      "size": 3788,
+      "compressed_size": 1290,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 4065868610
+    },
+    {
+      "name": "xl/_rels/workbook.xml.rels",
+      "size": 2515,
+      "compressed_size": 374,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2259172272
+    },
+    {
+      "name": "xl/worksheets/sheet1.xml",
+      "size": 3820,
+      "compressed_size": 1252,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 431397824
+    },
+    {
+      "name": "xl/worksheets/sheet2.xml",
+      "size": 28984,
+      "compressed_size": 5467,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3189964324
+    },
+    {
+      "name": "xl/worksheets/sheet3.xml",
+      "size": 23656,
+      "compressed_size": 4733,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2926757603
+    },
+    {
+      "name": "xl/worksheets/sheet4.xml",
+      "size": 111422,
+      "compressed_size": 16169,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3866337958
+    },
+    {
+      "name": "xl/worksheets/sheet5.xml",
+      "size": 13527,
+      "compressed_size": 2904,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1186730896
+    },
+    {
+      "name": "xl/worksheets/sheet6.xml",
+      "size": 52340,
+      "compressed_size": 6997,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 67353265
+    },
+    {
+      "name": "xl/worksheets/sheet7.xml",
+      "size": 14609,
+      "compressed_size": 3440,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2802626678
+    },
+    {
+      "name": "xl/worksheets/sheet8.xml",
+      "size": 19533,
+      "compressed_size": 4577,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2844334404
+    },
+    {
+      "name": "xl/worksheets/sheet9.xml",
+      "size": 14356,
+      "compressed_size": 2506,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2081092389
+    },
+    {
+      "name": "xl/worksheets/sheet10.xml",
+      "size": 14679,
+      "compressed_size": 2501,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 995441659
+    },
+    {
+      "name": "xl/worksheets/sheet11.xml",
+      "size": 30693,
+      "compressed_size": 6554,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 715867289
+    },
+    {
+      "name": "xl/worksheets/sheet12.xml",
+      "size": 11844,
+      "compressed_size": 2827,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1175693768
+    },
+    {
+      "name": "xl/theme/theme1.xml",
+      "size": 7645,
+      "compressed_size": 1750,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1093938493
+    },
+    {
+      "name": "xl/media/image1.jpeg",
+      "size": 21432,
+      "compressed_size": 21432,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2352061078
+    },
+    {
+      "name": "xl/media/image2.jpeg",
+      "size": 641,
+      "compressed_size": 641,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 884508553
+    },
+    {
+      "name": "xl/styles.xml",
+      "size": 141897,
+      "compressed_size": 8560,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3932495570
+    },
+    {
+      "name": "xl/sharedStrings.xml",
+      "size": 15655,
+      "compressed_size": 4364,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 501689414
+    },
+    {
+      "name": "xl/drawings/drawing7.xml",
+      "size": 1246,
+      "compressed_size": 640,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1593718518
+    },
+    {
+      "name": "xl/drawings/drawing1.xml",
+      "size": 5434,
+      "compressed_size": 1539,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1910805120
+    },
+    {
+      "name": "xl/drawings/vmlDrawing1.vml",
+      "size": 1441,
+      "compressed_size": 726,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3231762581
+    },
+    {
+      "name": "xl/media/image3.jpeg",
+      "size": 227140,
+      "compressed_size": 227140,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1197536491
+    },
+    {
+      "name": "xl/media/image7.png",
+      "size": 6441,
+      "compressed_size": 6441,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 4012458336
+    },
+    {
+      "name": "xl/media/image8.png",
+      "size": 108488,
+      "compressed_size": 108488,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 735142610
+    },
+    {
+      "name": "xl/drawings/drawing2.xml",
+      "size": 19154,
+      "compressed_size": 2700,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1450655876
+    },
+    {
+      "name": "xl/drawings/vmlDrawing2.vml",
+      "size": 7841,
+      "compressed_size": 1455,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2845274649
+    },
+    {
+      "name": "xl/drawings/drawing9.xml",
+      "size": 8557,
+      "compressed_size": 1249,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1240797851
+    },
+    {
+      "name": "xl/drawings/vmlDrawing7.vml",
+      "size": 4978,
+      "compressed_size": 1000,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2780144083
+    },
+    {
+      "name": "xl/drawings/drawing10.xml",
+      "size": 10858,
+      "compressed_size": 5046,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2186181286
+    },
+    {
+      "name": "xl/drawings/vmlDrawing8.vml",
+      "size": 2331,
+      "compressed_size": 833,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 459438380
+    },
+    {
+      "name": "xl/media/image9.png",
+      "size": 557441,
+      "compressed_size": 557441,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 43901727
+    },
+    {
+      "name": "xl/drawings/drawing11.xml",
+      "size": 5223,
+      "compressed_size": 1114,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 385226836
+    },
+    {
+      "name": "xl/drawings/vmlDrawing9.vml",
+      "size": 3181,
+      "compressed_size": 876,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2788897681
+    },
+    {
+      "name": "xl/worksheets/_rels/sheet1.xml.rels",
+      "size": 893,
+      "compressed_size": 281,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3013334070
+    },
+    {
+      "name": "xl/media/image4.png",
+      "size": 225266,
+      "compressed_size": 225266,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3590074371
+    },
+    {
+      "name": "xl/media/hdphoto1.wdp",
+      "size": 164329,
+      "compressed_size": 164329,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1992695928
+    },
+    {
+      "name": "xl/worksheets/_rels/sheet2.xml.rels",
+      "size": 1774,
+      "compressed_size": 312,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3291258233
+    },
+    {
+      "name": "xl/drawings/drawing3.xml",
+      "size": 57632,
+      "compressed_size": 4659,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2798600885
+    },
+    {
+      "name": "xl/drawings/vmlDrawing3.vml",
+      "size": 10444,
+      "compressed_size": 1732,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2905234179
+    },
+    {
+      "name": "xl/worksheets/_rels/sheet3.xml.rels",
+      "size": 2223,
+      "compressed_size": 328,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 502239974
+    },
+    {
+      "name": "xl/worksheets/_rels/sheet4.xml.rels",
+      "size": 6916,
+      "compressed_size": 544,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1962522101
+    },
+    {
+      "name": "xl/worksheets/_rels/sheet5.xml.rels",
+      "size": 904,
+      "compressed_size": 270,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3222830394
+    },
+    {
+      "name": "xl/worksheets/_rels/sheet6.xml.rels",
+      "size": 6047,
+      "compressed_size": 502,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2721868855
+    },
+    {
+      "name": "xl/worksheets/_rels/sheet7.xml.rels",
+      "size": 464,
+      "compressed_size": 219,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1954528055
+    },
+    {
+      "name": "xl/worksheets/_rels/sheet8.xml.rels",
+      "size": 464,
+      "compressed_size": 219,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 377416813
+    },
+    {
+      "name": "xl/worksheets/_rels/sheet9.xml.rels",
+      "size": 1347,
+      "compressed_size": 291,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1466979275
+    },
+    {
+      "name": "xl/worksheets/_rels/sheet10.xml.rels",
+      "size": 908,
+      "compressed_size": 271,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2845916208
+    },
+    {
+      "name": "xl/worksheets/_rels/sheet11.xml.rels",
+      "size": 323,
+      "compressed_size": 195,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2124656995
+    },
+    {
+      "name": "xl/worksheets/_rels/sheet12.xml.rels",
+      "size": 1055,
+      "compressed_size": 278,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1451087656
+    },
+    {
+      "name": "xl/theme/_rels/theme1.xml.rels",
+      "size": 429,
+      "compressed_size": 201,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2897948372
+    },
+    {
+      "name": "xl/media/image5.png",
+      "size": 683118,
+      "compressed_size": 683118,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 64657792
+    },
+    {
+      "name": "xl/media/hdphoto2.wdp",
+      "size": 81823,
+      "compressed_size": 81823,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2660734107
+    },
+    {
+      "name": "xl/media/image6.png",
+      "size": 704368,
+      "compressed_size": 704368,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3532307439
+    },
+    {
+      "name": "xl/drawings/_rels/drawing2.xml.rels",
+      "size": 418,
+      "compressed_size": 227,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 689124801
+    },
+    {
+      "name": "xl/drawings/drawing4.xml",
+      "size": 63152,
+      "compressed_size": 3537,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 196955532
+    },
+    {
+      "name": "xl/drawings/vmlDrawing4.vml",
+      "size": 1376269,
+      "compressed_size": 515915,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 486997667
+    },
+    {
+      "name": "xl/drawings/_rels/drawing3.xml.rels",
+      "size": 553,
+      "compressed_size": 235,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 4167867835
+    },
+    {
+      "name": "xl/drawings/_rels/drawing7.xml.rels",
+      "size": 292,
+      "compressed_size": 190,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2026798719
+    },
+    {
+      "name": "xl/drawings/_rels/drawing8.xml.rels",
+      "size": 292,
+      "compressed_size": 190,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2614850998
+    },
+    {
+      "name": "xl/drawings/_rels/drawing10.xml.rels",
+      "size": 292,
+      "compressed_size": 190,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 452858001
+    },
+    {
+      "name": "xl/vbaProject.bin",
+      "size": 78336,
+      "compressed_size": 23330,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2892106503
+    },
+    {
+      "name": "xl/drawings/drawing8.xml",
+      "size": 6110,
+      "compressed_size": 1621,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2033850125
+    },
+    {
+      "name": "xl/drawings/drawing5.xml",
+      "size": 3555,
+      "compressed_size": 1039,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 529588607
+    },
+    {
+      "name": "xl/drawings/vmlDrawing5.vml",
+      "size": 2308,
+      "compressed_size": 779,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3794997979
+    },
+    {
+      "name": "xl/drawings/drawing6.xml",
+      "size": 51016,
+      "compressed_size": 2712,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 860820024
+    },
+    {
+      "name": "xl/drawings/vmlDrawing6.vml",
+      "size": 32973,
+      "compressed_size": 2509,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 559778945
+    },
+    {
+      "name": "xl/printerSettings/printerSettings1.bin",
+      "size": 1148,
+      "compressed_size": 348,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 25809616
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp1.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/printerSettings/printerSettings2.bin",
+      "size": 1148,
+      "compressed_size": 348,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2583710582
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp2.xml",
+      "size": 283,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 871554005
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp3.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3269579332
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp4.xml",
+      "size": 283,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3015867589
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp5.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 4019687577
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp6.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp7.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp8.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp9.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/printerSettings/printerSettings3.bin",
+      "size": 1148,
+      "compressed_size": 348,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2583710582
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp10.xml",
+      "size": 283,
+      "compressed_size": 244,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1226921514
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp11.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1882799889
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp12.xml",
+      "size": 287,
+      "compressed_size": 245,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3787957656
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp13.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp14.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp15.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp16.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp17.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp18.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp19.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp20.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/printerSettings/printerSettings4.bin",
+      "size": 1148,
+      "compressed_size": 348,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 25809616
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp21.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp22.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp23.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp24.xml",
+      "size": 282,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 242840222
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp25.xml",
+      "size": 282,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 32719389
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp26.xml",
+      "size": 282,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1213228250
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp27.xml",
+      "size": 282,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 18774370
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp28.xml",
+      "size": 282,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 561171223
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp29.xml",
+      "size": 283,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 627361930
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp30.xml",
+      "size": 284,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 61100685
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp31.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1886882661
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp32.xml",
+      "size": 283,
+      "compressed_size": 241,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2590898693
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp33.xml",
+      "size": 285,
+      "compressed_size": 244,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3499934408
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp34.xml",
+      "size": 283,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 362566661
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp35.xml",
+      "size": 283,
+      "compressed_size": 241,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 333676795
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp36.xml",
+      "size": 284,
+      "compressed_size": 241,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3393650838
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp37.xml",
+      "size": 284,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2470615846
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp38.xml",
+      "size": 284,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 5125629
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp39.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 658889400
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp40.xml",
+      "size": 285,
+      "compressed_size": 244,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2013961506
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp41.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 591078692
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp42.xml",
+      "size": 285,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2947567286
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp43.xml",
+      "size": 284,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2537317562
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp44.xml",
+      "size": 284,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3320051250
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp45.xml",
+      "size": 283,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 4276181717
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp46.xml",
+      "size": 283,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2211849978
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp47.xml",
+      "size": 283,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1024824673
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp48.xml",
+      "size": 283,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2644254952
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp49.xml",
+      "size": 283,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2304138232
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp50.xml",
+      "size": 285,
+      "compressed_size": 244,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1510131757
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp51.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 974083659
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp52.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3557537562
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp53.xml",
+      "size": 283,
+      "compressed_size": 240,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3066288356
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp54.xml",
+      "size": 281,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3294233932
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp55.xml",
+      "size": 283,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2526172153
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp56.xml",
+      "size": 283,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1042883377
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp57.xml",
+      "size": 283,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3045513435
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp58.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp59.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp90.xml",
+      "size": 284,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1384664149
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp91.xml",
+      "size": 283,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 4221089108
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp92.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 768257250
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp93.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 74642680
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp94.xml",
+      "size": 283,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3766652698
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp95.xml",
+      "size": 285,
+      "compressed_size": 244,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3686425678
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp96.xml",
+      "size": 283,
+      "compressed_size": 241,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2565197673
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp97.xml",
+      "size": 285,
+      "compressed_size": 244,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 489597011
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp98.xml",
+      "size": 285,
+      "compressed_size": 244,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 380597458
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp99.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp100.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp101.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/printerSettings/printerSettings7.bin",
+      "size": 4348,
+      "compressed_size": 1088,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 4070517731
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp64.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/printerSettings/printerSettings6.bin",
+      "size": 1148,
+      "compressed_size": 348,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 25809616
+    },
+    {
+      "name": "xl/printerSettings/printerSettings8.bin",
+      "size": 4348,
+      "compressed_size": 1086,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2952752712
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp62.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/printerSettings/printerSettings5.bin",
+      "size": 1148,
+      "compressed_size": 348,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2583710582
+    },
+    {
+      "name": "xl/printerSettings/printerSettings9.bin",
+      "size": 1148,
+      "compressed_size": 348,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2583710582
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp63.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp65.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3154273543
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp102.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp103.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp104.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp105.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp106.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/printerSettings/printerSettings10.bin",
+      "size": 1148,
+      "compressed_size": 348,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 285656169
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp66.xml",
+      "size": 282,
+      "compressed_size": 241,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3511775374
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp67.xml",
+      "size": 283,
+      "compressed_size": 241,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1881010343
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp107.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp108.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp68.xml",
+      "size": 282,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2095967727
+    },
+    {
+      "name": "xl/printerSettings/printerSettings11.bin",
+      "size": 1148,
+      "compressed_size": 348,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 25809616
+    },
+    {
+      "name": "xl/printerSettings/printerSettings12.bin",
+      "size": 1148,
+      "compressed_size": 348,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2583710582
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp69.xml",
+      "size": 282,
+      "compressed_size": 240,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2375544373
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp70.xml",
+      "size": 282,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 4235651131
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp109.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp110.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp111.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/calcChain.xml",
+      "size": 7934,
+      "compressed_size": 1624,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 4222686876
+    },
+    {
+      "name": "xl/comments1.xml",
+      "size": 1131,
+      "compressed_size": 451,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 4248612579
+    },
+    {
+      "name": "docProps/core.xml",
+      "size": 659,
+      "compressed_size": 357,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3008563421
+    },
+    {
+      "name": "docProps/app.xml",
+      "size": 1855,
+      "compressed_size": 733,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 841462506
+    },
+    {
+      "name": "docProps/custom.xml",
+      "size": 397,
+      "compressed_size": 270,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2311036231
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp61.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp60.xml",
+      "size": 176,
+      "compressed_size": 157,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 110686279
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp71.xml",
+      "size": 282,
+      "compressed_size": 240,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2875831233
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp72.xml",
+      "size": 282,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2920307776
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp73.xml",
+      "size": 283,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1392122490
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp74.xml",
+      "size": 285,
+      "compressed_size": 244,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 4105681629
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp75.xml",
+      "size": 284,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3468269782
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp76.xml",
+      "size": 285,
+      "compressed_size": 244,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1585344273
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp77.xml",
+      "size": 283,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1067294733
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp78.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 1069105319
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp79.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2449310516
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp80.xml",
+      "size": 283,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 891149583
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp81.xml",
+      "size": 283,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 362566661
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp82.xml",
+      "size": 284,
+      "compressed_size": 242,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 826853729
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp83.xml",
+      "size": 284,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3376495593
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp84.xml",
+      "size": 283,
+      "compressed_size": 241,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3457795674
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp85.xml",
+      "size": 284,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2101770871
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp86.xml",
+      "size": 284,
+      "compressed_size": 241,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 608428487
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp87.xml",
+      "size": 284,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 2033747435
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp88.xml",
+      "size": 285,
+      "compressed_size": 243,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3006409525
+    },
+    {
+      "name": "xl/ctrlProps/ctrlProp89.xml",
+      "size": 284,
+      "compressed_size": 241,
+      "date_time": [
+        1980,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "crc": 3443508341
+    }
+  ],
+  "package_details": {
+    "vbaProject.bin_size": 78336,
+    "workbook_xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<workbook xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" mc:Ignorable=\"x15 xr xr6 xr10 xr2\" xmlns:x15=\"http://schemas.microsoft.com/office/spreadsheetml/2010/11/main\" xmlns:xr=\"http://schemas.microsoft.com/office/spreadsheetml/2014/revision\" xmlns:xr6=\"http://schemas.microsoft.com/office/spreadsheetml/2016/revision6\" xmlns:xr10=\"http://schemas.microsoft.com/office/spreadsheetml/2016/revision10\" xmlns:xr2=\"http://schemas.microsoft.com/office/spreadsheetml/2015/revision2\"><fileVersion appName=\"xl\" lastEdited=\"7\" lowestEdited=\"6\" rupBuild=\"28324\" codeName=\"{899C9086-67A9-5B14-2C2D-5A8001700F7D}\"/><workbookPr codeName=\"ThisWorkbook\"/><mc:AlternateContent xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\"><mc:Choice Requires=\"x15\"><x15ac:absPath url=\"D:\\kcm\\BOMBAS CENTRIFUGAS\\BOMBAS CENTRIFUGAS REV C\\\" xmlns:x15ac=\"http://schemas.microsoft.com/office/spreadsheetml/2010/11/ac\"/></mc:Choice></mc:AlternateContent><xr:revisionPtr revIDLastSave=\"0\" documentId=\"13_ncr:1_{F9A787F6-DD65-4F4A-ADD4-9B025D079279}\" xr6:coauthVersionLast=\"47\" xr6:coauthVersionMax=\"47\" xr10:uidLastSave=\"{00000000-0000-0000-0000-000000000000}\"/><bookViews><workbookView xWindow=\"-120\" yWindow=\"-120\" windowWidth=\"20730\" windowHeight=\"11040\" tabRatio=\"739\" firstSheet=\"4\" activeTab=\"7\" xr2:uid=\"{00000000-000D-0000-FFFF-FFFF00000000}\"/></bookViews><sheets><sheet name=\"PAGINA PRINCIPAL\" sheetId=\"27\" r:id=\"rId1\"/><sheet name=\"CAIDA PRESION DE TUBERIA\" sheetId=\"2\" r:id=\"rId2\"/><sheet name=\"CALCULO DE BOMBA\" sheetId=\"15\" r:id=\"rId3\"/><sheet name=\"TABLA DE ACCESORIOS DESCARGA\" sheetId=\"36\" r:id=\"rId4\"/><sheet name=\"RAMALES\" sheetId=\"30\" r:id=\"rId5\"/><sheet name=\"TABLA DE ACCESORIOS SUCCION\" sheetId=\"28\" r:id=\"rId6\"/><sheet name=\"005PU001\" sheetId=\"37\" r:id=\"rId7\"/><sheet name=\"RESUMEN PARA PDF\" sheetId=\"35\" r:id=\"rId8\"/><sheet name=\"REGISTROS\" sheetId=\"29\" r:id=\"rId9\"/><sheet name=\"ESPECIFICACIÓN DE TUBERIA\" sheetId=\"1\" r:id=\"rId10\"/><sheet name=\"VELOCIDADES RECOMENDADAS\" sheetId=\"3\" r:id=\"rId11\"/><sheet name=\"REPORTE GENERAL\" sheetId=\"34\" r:id=\"rId12\"/></sheets><definedNames><definedName name=\"_xlnm.Print_Area\" localSheetId=\"7\">'RESUMEN PARA PDF'!$A$1:$H$98</definedName><definedName name=\"DESCARGA\">'VELOCIDADES RECOMENDADAS'!$C$5:$F$23</definedName><definedName name=\"DIAMETRO\">'VELOCIDADES RECOMENDADAS'!$T$4:$W$23</definedName><definedName name=\"FRICCION\">'VELOCIDADES RECOMENDADAS'!$T$4:$V$23</definedName><definedName name=\"gravedadespecifica\">'VELOCIDADES RECOMENDADAS'!$Y$4:$AC$23</definedName><definedName name=\"INPIPE\">'VELOCIDADES RECOMENDADAS'!$K$4:$R$23</definedName><definedName name=\"INTUBE\">'VELOCIDADES RECOMENDADAS'!$C$4:$F$23</definedName><definedName name=\"LISTA\">'VELOCIDADES RECOMENDADAS'!#REF!</definedName><definedName name=\"OUTPIPE\">'VELOCIDADES RECOMENDADAS'!$B$4:$F$23</definedName><definedName name=\"OUTPIPES\">'VELOCIDADES RECOMENDADAS'!$B$4:$I$23</definedName><definedName name=\"presionvapor\">'VELOCIDADES RECOMENDADAS'!$Y$4:$AB$23</definedName><definedName name=\"Print_Area\" localSheetId=\"1\">'CAIDA PRESION DE TUBERIA'!$A$2:$A$61</definedName><definedName name=\"Print_Area\" localSheetId=\"9\">'ESPECIFICACIÓN DE TUBERIA'!#REF!</definedName><definedName name=\"RUGOSIDAD\">'VELOCIDADES RECOMENDADAS'!$M$26:$O$31</definedName><definedName name=\"SUCCION\">'VELOCIDADES RECOMENDADAS'!$L$5:$O$17</definedName><definedName name=\"TIPOIMPULSOR\">'VELOCIDADES RECOMENDADAS'!$AE$5:$AG$33</definedName><definedName name=\"tipotanque\">'VELOCIDADES RECOMENDADAS'!$T$26:$V$30</definedName></definedNames><calcPr calcId=\"181029\"/></workbook>",
+    "content_types_xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<Types xmlns=\"http://schemas.openxmlformats.org/package/2006/content-types\"><Default Extension=\"bin\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.printerSettings\"/><Default Extension=\"jpeg\" ContentType=\"image/jpeg\"/><Default Extension=\"png\" ContentType=\"image/png\"/><Default Extension=\"rels\" ContentType=\"application/vnd.openxmlformats-package.relationships+xml\"/><Default Extension=\"vml\" ContentType=\"application/vnd.openxmlformats-officedocument.vmlDrawing\"/><Default Extension=\"wdp\" ContentType=\"image/vnd.ms-photo\"/><Default Extension=\"xml\" ContentType=\"application/xml\"/><Override PartName=\"/xl/workbook.xml\" ContentType=\"application/vnd.ms-excel.sheet.macroEnabled.main+xml\"/><Override PartName=\"/xl/worksheets/sheet1.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/><Override PartName=\"/xl/worksheets/sheet2.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/><Override PartName=\"/xl/worksheets/sheet3.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/><Override PartName=\"/xl/worksheets/sheet4.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/><Override PartName=\"/xl/worksheets/sheet5.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/><Override PartName=\"/xl/worksheets/sheet6.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/><Override PartName=\"/xl/worksheets/sheet7.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/><Override PartName=\"/xl/worksheets/sheet8.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/><Override PartName=\"/xl/worksheets/sheet9.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/><Override PartName=\"/xl/worksheets/sheet10.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/><Override PartName=\"/xl/worksheets/sheet11.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/><Override PartName=\"/xl/worksheets/sheet12.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/><Override PartName=\"/xl/theme/theme1.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.theme+xml\"/><Override PartName=\"/xl/styles.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml\"/><Override PartName=\"/xl/sharedStrings.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml\"/><Override PartName=\"/xl/drawings/drawing1.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.drawing+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp1.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/drawings/drawing2.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.drawing+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp2.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp3.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp4.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp5.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp6.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp7.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp8.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp9.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/drawings/drawing3.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.drawing+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp10.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp11.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp12.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp13.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp14.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp15.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp16.xml\" ContentType=\"application/vnd.ms-excel.controlproperties+xml\"/><Override PartName=\"/xl/ctrlProps/ctrlProp17.xml\" ContentType=\"application/vnd.ms-ex",
+    "app_xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<Properties xmlns=\"http://schemas.openxmlformats.org/officeDocument/2006/extended-properties\" xmlns:vt=\"http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes\"><Application>Microsoft Excel</Application><DocSecurity>0</DocSecurity><ScaleCrop>false</ScaleCrop><HeadingPairs><vt:vector size=\"4\" baseType=\"variant\"><vt:variant><vt:lpstr>Hojas de cálculo</vt:lpstr></vt:variant><vt:variant><vt:i4>12</vt:i4></vt:variant><vt:variant><vt:lpstr>Rangos con nombre</vt:lpstr></vt:variant><vt:variant><vt:i4>15</vt:i4></vt:variant></vt:vector></HeadingPairs><TitlesOfParts><vt:vector size=\"27\" baseType=\"lpstr\"><vt:lpstr>PAGINA PRINCIPAL</vt:lpstr><vt:lpstr>CAIDA PRESION DE TUBERIA</vt:lpstr><vt:lpstr>CALCULO DE BOMBA</vt:lpstr><vt:lpstr>TABLA DE ACCESORIOS DESCARGA</vt:lpstr><vt:lpstr>RAMALES</vt:lpstr><vt:lpstr>TABLA DE ACCESORIOS SUCCION</vt:lpstr><vt:lpstr>005PU001</vt:lpstr><vt:lpstr>RESUMEN PARA PDF</vt:lpstr><vt:lpstr>REGISTROS</vt:lpstr><vt:lpstr>ESPECIFICACIÓN DE TUBERIA</vt:lpstr><vt:lpstr>VELOCIDADES RECOMENDADAS</vt:lpstr><vt:lpstr>REPORTE GENERAL</vt:lpstr><vt:lpstr>'RESUMEN PARA PDF'!Área_de_impresión</vt:lpstr><vt:lpstr>DESCARGA</vt:lpstr><vt:lpstr>DIAMETRO</vt:lpstr><vt:lpstr>FRICCION</vt:lpstr><vt:lpstr>gravedadespecifica</vt:lpstr><vt:lpstr>INPIPE</vt:lpstr><vt:lpstr>INTUBE</vt:lpstr><vt:lpstr>OUTPIPE</vt:lpstr><vt:lpstr>OUTPIPES</vt:lpstr><vt:lpstr>presionvapor</vt:lpstr><vt:lpstr>'CAIDA PRESION DE TUBERIA'!Print_Area</vt:lpstr><vt:lpstr>RUGOSIDAD</vt:lpstr><vt:lpstr>SUCCION</vt:lpstr><vt:lpstr>TIPOIMPULSOR</vt:lpstr><vt:lpstr>tipotanque</vt:lpstr></vt:vector></TitlesOfParts><Company>Vinbor</Company><LinksUpToDate>false</LinksUpToDate><SharedDoc>false</SharedDoc><HyperlinksChanged>false</HyperlinksChanged><AppVersion>16.0300</AppVersion></Properties>",
+    "core_xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dc:creator>Personal</dc:creator><cp:lastModifiedBy>RMR02</cp:lastModifiedBy><cp:lastPrinted>2024-09-27T21:55:58Z</cp:lastPrinted><dcterms:created xsi:type=\"dcterms:W3CDTF\">2003-09-12T19:06:53Z</dcterms:created><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2025-01-22T16:49:30Z</dcterms:modified></cp:coreProperties>",
+    "custom_xml_parts": [],
+    "drawings": [
+      "xl/drawings/drawing7.xml",
+      "xl/drawings/drawing1.xml",
+      "xl/drawings/vmlDrawing1.vml",
+      "xl/drawings/drawing2.xml",
+      "xl/drawings/vmlDrawing2.vml",
+      "xl/drawings/drawing9.xml",
+      "xl/drawings/vmlDrawing7.vml",
+      "xl/drawings/drawing10.xml",
+      "xl/drawings/vmlDrawing8.vml",
+      "xl/drawings/drawing11.xml",
+      "xl/drawings/vmlDrawing9.vml",
+      "xl/drawings/drawing3.xml",
+      "xl/drawings/vmlDrawing3.vml",
+      "xl/drawings/_rels/drawing2.xml.rels",
+      "xl/drawings/drawing4.xml",
+      "xl/drawings/vmlDrawing4.vml",
+      "xl/drawings/_rels/drawing3.xml.rels",
+      "xl/drawings/_rels/drawing7.xml.rels",
+      "xl/drawings/_rels/drawing8.xml.rels",
+      "xl/drawings/_rels/drawing10.xml.rels",
+      "xl/drawings/drawing8.xml",
+      "xl/drawings/drawing5.xml",
+      "xl/drawings/vmlDrawing5.vml",
+      "xl/drawings/drawing6.xml",
+      "xl/drawings/vmlDrawing6.vml"
+    ],
+    "charts": [],
+    "images": [
+      "xl/media/image1.jpeg",
+      "xl/media/image2.jpeg",
+      "xl/media/image3.jpeg",
+      "xl/media/image7.png",
+      "xl/media/image8.png",
+      "xl/media/image9.png",
+      "xl/media/image4.png",
+      "xl/media/hdphoto1.wdp",
+      "xl/media/image5.png",
+      "xl/media/hdphoto2.wdp",
+      "xl/media/image6.png"
+    ],
+    "external_links": [],
+    "potential_macro_sheets": [
+      "xl/worksheets/sheet1.xml",
+      "xl/worksheets/sheet2.xml",
+      "xl/worksheets/sheet3.xml",
+      "xl/worksheets/sheet4.xml",
+      "xl/worksheets/sheet5.xml",
+      "xl/worksheets/sheet6.xml",
+      "xl/worksheets/sheet9.xml",
+      "xl/worksheets/sheet10.xml",
+      "xl/worksheets/sheet12.xml"
+    ]
+  }
+}

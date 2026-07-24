@@ -1,0 +1,3 @@
+side,flow_gpm,inside_diameter_in,nominal_diameter_in,material,absolute_roughness_ft,relative_roughness,density_lbm_ft3,dynamic_viscosity_cP,velocity_fps,Reynolds,legacy_f,colebrook_f,colebrook_residual,colebrook_iterations,colebrook_converged,haaland_f,haaland_residual,swamee_jain_f,swamee_jain_residual,input_status
+Discharge,770.5,6.04836447718,6,N/A,0.00012,0.00024,62,0.52,8.603724599,768552.521391,0.0272,0.0153189496204,2.32732944028e-08,4,True,0.0152239627037,0.025948044162,0.0154109752967,0.0249106716069,VERIFIED
+Suction,770.5,10.0417610459,10,N/A,0.00012,0.000144,62,0.52,3.12135124987,462915.39382,0.00013825420553,0.015017801735,9.30190502402e-09,5,True,0.0148534346884,0.0475715410664,0.0150735650751,0.0159637941843,VERIFIED

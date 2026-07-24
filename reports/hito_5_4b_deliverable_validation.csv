@@ -1,0 +1,11 @@
+path,exists,size_bytes,readable,line_count,status
+reports/pytest_collection.txt,True,1652,True,39,OK
+reports/test_collection_breakdown.md,True,2918,True,80,OK
+reports/pressure_reference_semantics.md,True,1035,True,25,OK
+reports/pressure_reference_test_matrix.csv,True,324,True,5,OK
+reports/domain_module_responsibility.md,True,1119,True,36,OK
+reports/hardcoded_atmospheric_pressure_audit.md,True,167,True,11,OK
+reports/hardcoded_atmospheric_pressure_audit.csv,True,14859,True,127,OK
+reports/canonical_boundary_head_balance.md,True,1452,True,36,OK
+reports/canonical_boundary_head_balance.csv,True,321,True,6,OK
+reports/hito_5_4b_summary.md,True,3503,True,96,OK

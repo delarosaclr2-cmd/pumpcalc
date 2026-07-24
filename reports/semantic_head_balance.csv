@@ -1,0 +1,7 @@
+scenario,description,static_elevation_head_ft,surface_pressure_difference_ft,pipe_major_losses_ft,accessory_minor_losses_ft,instrument_pressure_drop_ft,equipment_internal_pressure_drop_ft,minimum_required_equipment_inlet_pressure_head_ft,receiving_vessel_operating_pressure_head_ft,discharge_fitting_losses_legacy_ft,total_dynamic_head_ft
+WORKBOOK_LEGACY,A. WORKBOOK_LEGACY: U39/U40 inside accessory_minor, legacy ×2.31 conversion,5.279580,0.0,1.696094,188.575440,0.0,0.0,0.0,0.0,188.575440,195.551113
+SEMANTIC_RECLASSIFICATION_LEGACY_CONVERSION,B. SEMANTIC_RECLASSIFICATION_LEGACY_CONVERSION: U39→instrument_drop, U40→minimum_inlet, legacy ×2.31,5.279580,0.0,1.696094,3.475140,0.831600,0.0,184.268700,0.0,188.575440,195.551113
+VALIDATED_U40_AS_GAUGE,C. VALIDATED_U40_AS_GAUGE: SG-based conversion (SG=0.995), gauge pressure assumption,5.279580,0.0,1.696094,3.475140,0.834944,0.0,185.009664,0.0,188.575440,196.295421
+VALIDATED_U40_AS_ABSOLUTE,D. VALIDATED_U40_AS_ABSOLUTE: U40=79.77 psia − source 14.7 psia = 65.07 psi diff, SG-based conversion,5.279580,0.0,1.696094,3.475140,0.834944,0.0,150.916119,0.0,188.575440,162.201876
+U40_REFERENCE_UNKNOWN,E. U40_REFERENCE_UNKNOWN: Pressure reference not specified — no definitive validated TDH,5.279580,0.0,1.696094,3.475140,0.834944,0.0,0.0,0.0,188.575440,PRESSURE_REFERENCE_REQUIRED
+U40_EXCLUDED,F. U40_EXCLUDED: Sensitivity only — U40 excluded (not recommended as correction),5.279580,0.0,1.696094,3.475140,0.831600,0.0,0.0,0.0,4.306740,11.282413

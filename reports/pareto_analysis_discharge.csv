@@ -1,0 +1,21 @@
+side,row,item,name,loss_ft,pct_of_total,cumulative_pct,method
+discharge,15,5,Valvula de angulo de Retencion,2.5680555555555555,74.25742574257427,74.25742574257427,LEQ_OVER_D
+discharge,39,19,Codo  Soldado 90 (Radio Largo),0.6163333333333332,17.82178217821782,92.0792079207921,LEQ_OVER_D
+discharge,7,1,Valvula de Compuerta 100% Abierta,0.2739259259259259,7.920792079207921,100.00000000000003,LEQ_OVER_D
+discharge,8,2,Valvula de Compuerta 1/2 Cerrada,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,9,3,Valvula de Compuerta 3/4 Cerrada,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,10,2,Valvula de Globo 100% Abierta,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,11,3,Valvula de Globo  1/2 Cerrada,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,12,2,Valvula de Globo de Retencion (Check),0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,13,3,Valvula de Globo Vertical de Retencion,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,14,4,Valvula de Angulo,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,16,6,Valvula Check de Balancin,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,17,7,Valvula Check de Levante,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,18,8,Valvula Check de Disco,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,19,9,Valvula de Pie con Colador de Visagra,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,20,10,Valvula de Pie con Colador de Cabezal,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,21,11,Valvula de Bola,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,22,12,Valvula de Mariposa,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,23,13,Valvula de Macho de Mariposa 3 vias,0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,24,14,Valvula Macho (Tapon),0.0,0.0,100.00000000000003,LEQ_OVER_D
+discharge,25,15,Codo Roscado 90,0.0,0.0,100.00000000000003,LEQ_OVER_D

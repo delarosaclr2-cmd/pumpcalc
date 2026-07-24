@@ -1,0 +1,154 @@
+sheet,cell,formula,constant_value,constant_description,verification_status
+CAIDA PRESION DE TUBERIA,G8,=G7*(G5/G6)^0.5,0.5,UNVERIFIED - needs analysis,UNVERIFIED
+CAIDA PRESION DE TUBERIA,V8,=V7*(V5/V6)^0.5,0.5,UNVERIFIED - needs analysis,UNVERIFIED
+CAIDA PRESION DE TUBERIA,G11,=50.6*G5*G9/(G8*G10),50.6,"Reynolds number constant for imperial units (Q in GPM, D in inches, ρ in lb/ft³, μ in cP)",KNOWN
+CAIDA PRESION DE TUBERIA,V11,=50.6*V5*V9/(V8*V10),50.6,"Reynolds number constant for imperial units (Q in GPM, D in inches, ρ in lb/ft³, μ in cP)",KNOWN
+CAIDA PRESION DE TUBERIA,V16,= 64/V11,64.0,UNVERIFIED - needs analysis,UNVERIFIED
+CAIDA PRESION DE TUBERIA,G19,=(((G17*G16*G9*(G5^2))/(G8^5))*2.3071)*G18,2.3071,Darcy-Weisbach constant for ft head loss (imperial units),KNOWN
+CAIDA PRESION DE TUBERIA,V19,=(((V17*V16*V9*(V5^2))/(V8^5))*2.3071)*V18,2.3071,Darcy-Weisbach constant for ft head loss (imperial units),KNOWN
+CALCULO DE BOMBA,C8,=14.7,14.7,Standard atmospheric pressure (psi),KNOWN
+CALCULO DE BOMBA,C9,=500/304.8,500.0,UNVERIFIED - needs analysis,UNVERIFIED
+CALCULO DE BOMBA,C9,=500/304.8,304.8,UNVERIFIED - needs analysis,UNVERIFIED
+CALCULO DE BOMBA,C12,=2.12*3.281,3.281,Meters to feet conversion,KNOWN
+CALCULO DE BOMBA,C12,=2.12*3.281,2.12,UNVERIFIED - needs analysis,UNVERIFIED
+CALCULO DE BOMBA,E14,=((C8+E8)*(2.31/E11))+C9-C11-C14-E9,2.31,psi to ft water conversion (1 psi = 2.31 ft H2O @ SG=1),KNOWN
+CALCULO DE BOMBA,E20,=(E4*C28*E11)/3960,3960,Hydraulic horsepower constant (Q*TDH*SG/3960 = HP),KNOWN
+CALCULO DE BOMBA,E22,=E21*0.7456,0.7456,HP to kW conversion (1 HP = 0.7456 kW),KNOWN
+CALCULO DE BOMBA,E23,=(E21*5252)/1700,5252,Torque constant (HP * 5252 / RPM = lb-ft),KNOWN
+CALCULO DE BOMBA,E23,=(E21*5252)/1700,1700,Motor speed constant (appears to be rated RPM),KNOWN
+CALCULO DE BOMBA,E24,=C28*0.3048,0.3048,Feet to meters conversion,KNOWN
+CALCULO DE BOMBA,E25,=E4*3.7854,3.7854,GPM to LPM conversion (1 GPM = 3.78541 LPM),KNOWN
+CALCULO DE BOMBA,E27,=(C29*(E4^0.5))/(E24^0.75),0.5,UNVERIFIED - needs analysis,UNVERIFIED
+CALCULO DE BOMBA,E27,=(C29*(E4^0.5))/(E24^0.75),0.75,UNVERIFIED - needs analysis,UNVERIFIED
+TABLA DE ACCESORIOS DESCARGA,I7,=((D7*F7)*($H$2^2)/(32.4*2))*H7,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I8,=((D8*F8)*($H$2^2)/(32.4*2))*H8,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I9,=((D9*F9)*($H$2^2)/(32.4*2))*H9,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I10,=((D10*F10)*($H$2^2)/(32.4*2))*H10,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I11,=((D11*F11)*($H$2^2)/(32.4*2))*H11,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I12,=((D12*F12)*($H$2^2)/(32.4*2))*H12,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I13,=((D13*F13)*($H$2^2)/(32.4*2))*H13,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I14,=((D14*F14)*($H$2^2)/(32.4*2))*H14,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I15,=((D15*F15)*($H$2^2)/(32.4*2))*H15,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I16,=((D16*F16)*($H$2^2)/(32.4*2))*H16,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I17,=((D17*F17)*($H$2^2)/(32.4*2))*H17,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I18,=((D18*F18)*($H$2^2)/(32.4*2))*H18,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I19,=((D19*F19)*($H$2^2)/(32.4*2))*H19,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I20,=((D20*F20)*($H$2^2)/(32.4*2))*H20,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I21,=((D21*F21)*($H$2^2)/(32.4*2))*H21,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I22,=((D22*F22)*($H$2^2)/(32.4*2))*H22,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I23,=((D23*F23)*($H$2^2)/(32.4*2))*H23,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I24,=((D24*F24)*($H$2^2)/(32.4*2))*H24,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I25,=((D25*F25)*($H$2^2)/(32.4*2))*H25,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I26,=((D26*F26)*($H$2^2)/(32.4*2))*H26,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I27,=((D27*F27)*($H$2^2)/(32.4*2))*H27,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I28,=((D28*F28)*($H$2^2)/(32.4*2))*H28,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I29,=((D29*F29)*($H$2^2)/(32.4*2))*H29,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I30,=((D30*F30)*($H$2^2)/(32.4*2))*H30,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I31,=((D31*F31)*($H$2^2)/(32.4*2))*H31,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I32,=((D32*F32)*($H$2^2)/(32.4*2))*H32,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I33,=((D33*F33)*($H$2^2)/(32.4*2))*H33,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I34,=((D34*F34)*($H$2^2)/(32.4*2))*H34,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I35,=((D35*F35)*($H$2^2)/(32.4*2))*H35,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I36,=((D36*F36)*($H$2^2)/(32.4*2))*H36,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I37,=((D37*F37)*($H$2^2)/(32.4*2))*H37,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I38,=((D38*F38)*($H$2^2)/(32.4*2))*H38,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I39,=((D39*F39)*($H$2^2)/(32.4*2))*H39,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I40,=((D40*F40)*($H$2^2)/(32.4*2))*H40,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,U41,=(SUM(U7:U40))*2.31,2.31,psi to ft water conversion (1 psi = 2.31 ft H2O @ SG=1),KNOWN
+TABLA DE ACCESORIOS DESCARGA,O42,=O41/2.31,2.31,psi to ft water conversion (1 psi = 2.31 ft H2O @ SG=1),KNOWN
+TABLA DE ACCESORIOS DESCARGA,S42,=S41/2.31,2.31,psi to ft water conversion (1 psi = 2.31 ft H2O @ SG=1),KNOWN
+TABLA DE ACCESORIOS DESCARGA,U42,=U41/2.31,2.31,psi to ft water conversion (1 psi = 2.31 ft H2O @ SG=1),KNOWN
+TABLA DE ACCESORIOS DESCARGA,Y42,=Y41/2.31,2.31,psi to ft water conversion (1 psi = 2.31 ft H2O @ SG=1),KNOWN
+TABLA DE ACCESORIOS DESCARGA,AC42,=AC41/2.31,2.31,psi to ft water conversion (1 psi = 2.31 ft H2O @ SG=1),KNOWN
+TABLA DE ACCESORIOS DESCARGA,AG42,=AG41/2.31,2.31,psi to ft water conversion (1 psi = 2.31 ft H2O @ SG=1),KNOWN
+TABLA DE ACCESORIOS DESCARGA,I77,=(D77*F77*(H77^2))/(32.4*2),32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I78,=(D78*F78*(H78^2))/(32.4*2),32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS DESCARGA,I79,=(D79*F79*(H79^2))/(32.4*2),32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+RAMALES,D10,=(4*(D9/448.8309))/(PI()*(D8/12)*(D8/12)),448.8309,"GPM to ft³/s conversion (1 GPM = 0.002228 ft³/s, 1/0.002228 = 448.83)",KNOWN
+RAMALES,D12,=((('CAIDA PRESION DE TUBERIA'!$G$17*'CAIDA PRESION DE TUBERIA'!$G$16*'CAIDA PRESION DE TUBERIA'!$G$9*(D9^2))/(('CAIDA PRESION DE TUBERIA'!$G$7*(D9/D10)^0.5)^5))*2.3071)*'CAIDA PRESION DE TUBERIA'!$G$18,2.3071,Darcy-Weisbach constant for ft head loss (imperial units),KNOWN
+RAMALES,D12,=((('CAIDA PRESION DE TUBERIA'!$G$17*'CAIDA PRESION DE TUBERIA'!$G$16*'CAIDA PRESION DE TUBERIA'!$G$9*(D9^2))/(('CAIDA PRESION DE TUBERIA'!$G$7*(D9/D10)^0.5)^5))*2.3071)*'CAIDA PRESION DE TUBERIA'!$G$18,0.5,UNVERIFIED - needs analysis,UNVERIFIED
+TABLA DE ACCESORIOS SUCCION,I6,=((D6*F6)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H6,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I7,=((D7*F7)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H7,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I8,=((D8*F8)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H8,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I9,=((D9*F9)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H9,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I10,=((D10*F10)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H10,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I11,=((D11*F11)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H11,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I12,=((D12*F12)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H12,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I13,=((D13*F13)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H13,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I14,=((D14*F14)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H14,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I15,=((D15*F15)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H15,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I16,=((D16*F16)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H16,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I17,=((D17*F17)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H17,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I18,=((D18*F18)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H18,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I19,=((D19*F19)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H19,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I20,=((D20*F20)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H20,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I21,=((D21*F21)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H21,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I22,=((D22*F22)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H22,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I23,=((D23*F23)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H23,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I24,=((D24*F24)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H24,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I25,=((D25*F25)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H25,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I26,=((D26*F26)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H26,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I27,=((D27*F27)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H27,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I28,=((D28*F28)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H28,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I29,=((D29*F29)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H29,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I30,=((D30*F30)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H30,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I31,=((D31*F31)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H31,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I32,=((D32*F32)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H32,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I33,=((D33*F33)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H33,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I34,=((D34*F34)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H34,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I35,=((D35*F35)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H35,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I36,=((D36*F36)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H36,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I37,=((D37*F37)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H37,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I38,=((D38*F38)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H38,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+TABLA DE ACCESORIOS SUCCION,I39,=((D39*F39)*('CAIDA PRESION DE TUBERIA'!$V$6^2)/(32.4*2))*H39,32.4,"Velocity head constant (V²/(2g) in imperial, g=32.174 ft/s², 2g=64.348, V in ft/s, V²/64.348 = V²/32.174/2... checking: 32.4 is approximately 2g/2? Actually V²/(2g) with g=32.2 -> 64.4, half is 32.2, close to 32.4)",KNOWN
+005PU001,H10,='RESUMEN PARA PDF'!G25/3.281,3.281,Meters to feet conversion,KNOWN
+RESUMEN PARA PDF,D13,=B13*3.785,3.785,UNVERIFIED - needs analysis,UNVERIFIED
+RESUMEN PARA PDF,D15,=B15*3.785,3.785,UNVERIFIED - needs analysis,UNVERIFIED
+RESUMEN PARA PDF,D16,=B16*3.785,3.785,UNVERIFIED - needs analysis,UNVERIFIED
+RESUMEN PARA PDF,D19,=B19/3.28,3.28,UNVERIFIED - needs analysis,UNVERIFIED
+RESUMEN PARA PDF,D20,=B20/3.28,3.28,UNVERIFIED - needs analysis,UNVERIFIED
+RESUMEN PARA PDF,D21,=B21/3.28,3.28,UNVERIFIED - needs analysis,UNVERIFIED
+RESUMEN PARA PDF,D28,=B28/2.31,2.31,psi to ft water conversion (1 psi = 2.31 ft H2O @ SG=1),KNOWN
+VELOCIDADES RECOMENDADAS,AB5,=(AA5*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB5,=(AA5*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB6,=(AA6*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB6,=(AA6*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB7,=(AA7*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB7,=(AA7*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB8,=(AA8*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB8,=(AA8*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB9,=(AA9*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB9,=(AA9*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB10,=(AA10*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB10,=(AA10*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB11,=(AA11*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB11,=(AA11*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB12,=(AA12*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB12,=(AA12*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB13,=(AA13*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB13,=(AA13*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB14,=(AA14*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB14,=(AA14*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB15,=(AA15*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB15,=(AA15*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB16,=(AA16*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB16,=(AA16*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB17,=(AA17*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB17,=(AA17*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB18,=(AA18*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB18,=(AA18*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB19,=(AA19*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB19,=(AA19*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB20,=(AA20*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB20,=(AA20*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB21,=(AA21*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB21,=(AA21*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB22,=(AA22*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB22,=(AA22*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB23,=(AA23*3.2808)/1.422,3.2808,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,AB23,=(AA23*3.2808)/1.422,1.422,UNVERIFIED - needs analysis,UNVERIFIED
+VELOCIDADES RECOMENDADAS,V27,=(2.3071*'CALCULO DE BOMBA'!C8)-('CALCULO DE BOMBA'!E9+'CALCULO DE BOMBA'!C9+'CALCULO DE BOMBA'!C11),2.3071,Darcy-Weisbach constant for ft head loss (imperial units),KNOWN
+VELOCIDADES RECOMENDADAS,V28,=(2.3071*'CALCULO DE BOMBA'!E8)-('CALCULO DE BOMBA'!E9+'CALCULO DE BOMBA'!C9+'CALCULO DE BOMBA'!C11),2.3071,Darcy-Weisbach constant for ft head loss (imperial units),KNOWN
+VELOCIDADES RECOMENDADAS,V29,=(2.3071*'CALCULO DE BOMBA'!C8)+'CALCULO DE BOMBA'!C9-('CALCULO DE BOMBA'!E9+'CALCULO DE BOMBA'!C11),2.3071,Darcy-Weisbach constant for ft head loss (imperial units),KNOWN
+VELOCIDADES RECOMENDADAS,V30,=(2.3071*'CALCULO DE BOMBA'!E8)+'CALCULO DE BOMBA'!C9-('CALCULO DE BOMBA'!E9+'CALCULO DE BOMBA'!C11),2.3071,Darcy-Weisbach constant for ft head loss (imperial units),KNOWN
+REPORTE GENERAL,C16,=C14*0.05,0.05,UNVERIFIED - needs analysis,UNVERIFIED

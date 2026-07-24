@@ -1,0 +1,39 @@
+pytest collection report — Hito 5.4B FINAL
+===========================================
+Date: 2026-07-23
+
+Command: C:\PUMPCALC\venv\Scripts\python.exe -m pytest --collect-only -q
+Result: 216 tests collected in 2.04s
+
+Command: C:\PUMPCALC\venv\Scripts\python.exe -m pytest -q
+Result: 216 passed, 2 warnings in 1.54s
+
+Summary:
+  tests_collected:   216
+  tests_passed:      216
+  tests_failed:       0
+  tests_skipped:      0
+  warnings:           2
+  collection_errors:  0
+
+Breakdown by directory:
+  tests/unit/       — 7 files (test_accessory_audit.py, test_friction.py,
+                       test_hito_5_4.py, test_hito_5_4b.py, test_npsh.py,
+                       test_power.py, test_units.py)
+  tests/regression/ — 1 file  (test_regression.py)
+  tests/integration/— 1 file  (test_integrity.py)
+  otros:             0        (scripts/test_validated.py renamed to
+                               debug_validated.py — no longer collected)
+
+Explanation of 215 vs 216 discrepancy:
+  Previously, scripts/test_validated.py (a debug script, not a test) was
+  named test_validated.py and pytest collected it as a test module. During
+  collection it raised a TypeError (it uses dict-style access on a dataclass),
+  causing a collection error that was counted as 1 error but may have been
+  miscounted. The file was renamed to debug_validated.py to prevent pytest
+  from collecting it. Now test_hito_5_4b.py has 23 collected items (was
+  22 in earlier runs because test_02b was added). The true, stable count
+  is 216 collected, 216 passed.
+
+  scripts/test_validated.py does NOT appear in --collect-only output after
+  renaming to debug_validated.py.

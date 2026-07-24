@@ -1,0 +1,5 @@
+scenario,suction_fit_ft,discharge_fit_ft,total_fit_ft,process_pressure_ft,tdh_ft,note
+LEGACY (hardcoded),0.016800,188.560000,188.576800,N/A,195.551113,Hardcoded constants (pre-audit)
+TDH_WITH_PRESSURE_INPUT,0.016825,188.558615,188.575440,0.0,195.551113,Current behavior: pressure column inside discharge fitting losses
+TDH_WITHOUT_PRESSURE_INPUT,0.016825,3.458315,3.475140,0.0,10.450813,Pressure column excluded from fitting losses
+TDH_WITH_PRESSURE_RECLASSIFIED_AS_PROCESS_REQUIREMENT,0.016825,3.458315,3.475140,185.100300,195.551113,Pressure column moved to separate process_required_pressure_head_ft

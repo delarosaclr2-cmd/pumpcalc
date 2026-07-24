@@ -1,0 +1,25 @@
+file,line,literal,classification,allowed_reason,replacement,status
+legacy_calculator.py,13,0.639,DOCUMENTED_WORKBOOK_CONSTANT,Velocity sizing factor G7/V7,required_diameter_from_flow_velocity(),OK
+legacy_calculator.py,14,50.6,DOCUMENTED_WORKBOOK_CONSTANT,Reynolds constant (workbook precision),_REYNOLDS_IMPERIAL,OK
+legacy_calculator.py,15,64.0,PHYSICAL_CONSTANT,Laminar friction f=64/Re,_LAMINAR_64,OK
+legacy_calculator.py,16,2.3071,DOCUMENTED_WORKBOOK_CONSTANT,Workbook psi-to-ft-water conversion,_PSI_TO_FT_H2O_WB,OK
+legacy_calculator.py,17,1.2,DOCUMENTED_WORKBOOK_CONSTANT,Safety factor G18/V18,_G18_MULTIPLIER,OK
+legacy_calculator.py,18,3960.0,PHYSICAL_CONSTANT,Hydraulic HP = Q*H*SG/3960,_HYDRAULIC_HP_FACTOR,OK
+legacy_calculator.py,19,5252.0,PHYSICAL_CONSTANT,Torque = HP*5252/RPM,_TORQUE_CONSTANT,OK
+legacy_calculator.py,20,0.3048,EXACT_UNIT_CONVERSION,Feet to metres,_FT_TO_M,OK
+legacy_calculator.py,21,0.7456,DOCUMENTED_WORKBOOK_CONSTANT,Workbook HP-to-kW (not standard 0.7457),_HP_TO_KW_WB,OK
+legacy_calculator.py,22,304.8,EXACT_UNIT_CONVERSION,mm-to-ft denominator,_MM_TO_FT,OK
+legacy_calculator.py,23,3.280839895,EXACT_UNIT_CONVERSION,Metres to feet,_M_TO_FT,OK
+legacy_calculator.py,83,0.00013,DOCUMENTED_WORKBOOK_CONSTANT,OUTPIPES lookup constant G16,G16 (workbook constant),DOCUMENTED
+legacy_calculator.py,89,0.0272,DOCUMENTED_WORKBOOK_CONSTANT,V17 hardcoded in workbook (duplicate of G17),inputs.legacy_f_discharge,OK
+validated_calculator.py,19,50.66,PHYSICAL_CONSTANT,Reynolds constant (full precision),_REYNOLDS_IMPERIAL,OK
+validated_calculator.py,20,32.174,PHYSICAL_CONSTANT,Standard gravity ft/s²,_G,OK
+validated_calculator.py,21,3960.0,PHYSICAL_CONSTANT,Hydraulic HP factor,_HYDRAULIC_HP_FACTOR,OK
+validated_calculator.py,22,5252.0,PHYSICAL_CONSTANT,Torque factor,_TORQUE_CONSTANT,OK
+validated_calculator.py,23,0.3048,EXACT_UNIT_CONVERSION,Feet to metres,_FT_TO_M,OK
+validated_calculator.py,24,0.7457,EXACT_UNIT_CONVERSION,HP to kW (standard),_HP_TO_KW,OK
+validated_calculator.py,25,3.28084,EXACT_UNIT_CONVERSION,Metres to feet,_M_TO_FT,OK
+validated_calculator.py,26,448.831,EXACT_UNIT_CONVERSION,GPM to ft³/s,_GPM_TO_FT3S,OK
+validated_calculator.py,27,0.0283168,EXACT_UNIT_CONVERSION,ft³ to m³,_FT3_TO_M3,OK
+legacy_calculator.py,(removed),"770.5, 62.0, 0.52, 1.67, 0.0168, 188.56",CASE_SPECIFIC_VALUE,N/A,inputs.xxx fields,REMOVED
+validated_calculator.py,(removed),"34.8, 195.55, 37.86, 52.58, 162.5, 88.5",CASE_SPECIFIC_VALUE,N/A,Computed from inputs,REMOVED

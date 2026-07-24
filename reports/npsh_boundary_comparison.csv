@@ -1,0 +1,3 @@
+method,description,surface_route_result_ft,flange_route_result_ft,absolute_difference_ft,equivalence_status,formula_derivation
+from_surface,From free surface (no velocity head),33.87505627699808,33.87505627699808,0.0,EQUIVALENT,NPSHa = P_surface/γ + z_surface - z_pump - losses - Pv/γ
+from_flange,From suction flange (Bernoulli-derived),33.87505627699808,33.87505627699808,0.0,EQUIVALENT,NPSHa = P_flange/γ + V²/2g - Pv/γ ; P_flange/γ = P_surface/γ + z_surface - z_flange - losses - V²/2g ; V²/2g cancels → same as surface

@@ -1,0 +1,10 @@
+check,value,verdict,flag
+Suction active rows,1,Only 1 of 34 rows has non-zero quantity,INFO
+Discharge active rows (Leq formula),3 of 34,3 rows contribute via Leq formula (I column),INFO
+Discharge pressure entries,"2 entries (Row 39: 0.36 PSI, Row 40: 79.77 PSI)",Row 39 = instrument loss; Row 40 = equipment operating pressure,INFO
+Discharge pressure share,98.17%,Pressure entries dominate the total (185.1 of 188.6 ft),WARN
+g approximation bias (32.4 vs 32.174),0.70%,Systematic under-estimate on all velocity-based Leq losses,WARN
+Row 39 dual entry,0.62 ft Leq + 0.83 ft pressure,Same row: two independent estimates coexist,WARN
+Row 40 zero-quantity pressure,79.77 PSI with H40=0,"Consistent with system-level requirement, not per-fitting loss",INFO
+All K factors verified,True,All 68 rows mapped to Crane K factors,INFO
+U40 classification,EQUIPMENT_PRESSURE_DROP,Per cell comment 'PRESION DE OPERACION DEL EQUIPO' and RESUMEN PARA PDF label,INFO

@@ -1,0 +1,44 @@
+{
+  "inspection_time": "2026-07-20T13:54:57.083619",
+  "files": {
+    "source": {
+      "path": "C:\\PUMPCALC\\KEETP-60-DM-008 - HOJA DE ESPECIFICACIÓN BOMBA 005PU001 REV C (1).xlsm",
+      "name": "KEETP-60-DM-008 - HOJA DE ESPECIFICACIÓN BOMBA 005PU001 REV C (1).xlsm",
+      "size_bytes": 3498710,
+      "created": "2026-07-20T13:34:26.167336",
+      "modified": "2026-07-20T13:32:45.512313",
+      "hashes": {
+        "md5": "e83508adc4ef667feda86c2596fc66ec",
+        "sha256": "23545d93b772509c58db16fd3388eeaee0d081dfb2609f193e09bcd4f765b79c",
+        "sha1": "f2b93ae2194dff75debd6962c3b5b951849ddf9a"
+      }
+    },
+    "original": {
+      "path": "C:\\PUMPCALC\\original\\KEETP-60-DM-008 - HOJA DE ESPECIFICACIÓN BOMBA 005PU001 REV C (1).xlsm",
+      "name": "KEETP-60-DM-008 - HOJA DE ESPECIFICACIÓN BOMBA 005PU001 REV C (1).xlsm",
+      "size_bytes": 3498710,
+      "created": "2026-07-20T13:42:52.289189",
+      "modified": "2026-07-20T13:32:45.512313",
+      "hashes": {
+        "md5": "e83508adc4ef667feda86c2596fc66ec",
+        "sha256": "23545d93b772509c58db16fd3388eeaee0d081dfb2609f193e09bcd4f765b79c",
+        "sha1": "f2b93ae2194dff75debd6962c3b5b951849ddf9a"
+      }
+    },
+    "working": {
+      "path": "C:\\PUMPCALC\\working\\KEETP-60-DM-008 - HOJA DE ESPECIFICACIÓN BOMBA 005PU001 REV C (1).xlsm",
+      "name": "KEETP-60-DM-008 - HOJA DE ESPECIFICACIÓN BOMBA 005PU001 REV C (1).xlsm",
+      "size_bytes": 3498710,
+      "created": "2026-07-20T13:42:52.634815",
+      "modified": "2026-07-20T13:32:45.512313",
+      "hashes": {
+        "md5": "e83508adc4ef667feda86c2596fc66ec",
+        "sha256": "23545d93b772509c58db16fd3388eeaee0d081dfb2609f193e09bcd4f765b79c",
+        "sha1": "f2b93ae2194dff75debd6962c3b5b951849ddf9a"
+      }
+    }
+  },
+  "all_files_exist": true,
+  "hashes_identical": true,
+  "conclusion": "IDENTICAL"
+}

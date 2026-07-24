@@ -1,0 +1,3 @@
+source_cell,pressure_psi,specific_gravity,legacy_conversion_factor,legacy_formula,legacy_head_ft,validated_conversion_factor,validated_formula,validated_head_ft,difference_ft,difference_pct
+U39,0.36,0.995,2.31,psi × 2.31,0.8316,2.319289,psi × 144 / (62.4 × SG),0.834944,0.003344,0.4021
+U40,79.77,0.995,2.31,psi × 2.31,184.2687,2.319289,psi × 144 / (62.4 × SG),185.009664,0.740964,0.4021
