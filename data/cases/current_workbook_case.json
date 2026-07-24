@@ -1,9 +1,8 @@
 {
-  "dataset_version": "1.0",
-  "dataset_hash": "f5cc84dfddcc",
-  "description": "Current workbook case data — single source for all calculations",
+  "dataset_version": "1.1",
+  "dataset_hash": "4c78da203306",
+  "description": "Current workbook case data - single source for all calculations",
   "source_workbook": "POTENCIA Y TDH.xlsm",
-
   "flow_gpm": 770.5,
   "density_lbm_ft3": 62.0,
   "specific_gravity": 0.995,
@@ -12,7 +11,6 @@
   "vapor_pressure_value": 0.8,
   "vapor_pressure_unit": "psia",
   "vapor_pressure_source_cell": "AA13",
-
   "suction_target_velocity_fps": 3.12,
   "suction_required_diameter_in": 10.041761045944389,
   "suction_nominal_diameter_in": 10.0,
@@ -25,7 +23,6 @@
   "suction_wall_thickness_in": null,
   "suction_outside_diameter_in": null,
   "suction_pipe_material": "Acero Inox SS",
-
   "discharge_target_velocity_fps": 8.6,
   "discharge_required_diameter_in": 6.048364477182011,
   "discharge_nominal_diameter_in": 6.0,
@@ -38,11 +35,75 @@
   "discharge_wall_thickness_in": null,
   "discharge_outside_diameter_in": null,
   "discharge_pipe_material": "Acero Inox SS",
-
   "atmospheric_pressure_psia": 14.7,
   "vessel_pressure": 0.0,
   "vessel_pressure_type": "gauge",
-
+  "npshr": {
+    "value": 6.34,
+    "unit": "m",
+    "value_provenance": {
+      "source_workbook": "KEETP-60-DM-008 - HOJA DE ESPECIFICACION BOMBA 005PU001 REV C (1).xlsm",
+      "source_sheet": "005PU001",
+      "source_location": "D22",
+      "source_type": "WORKBOOK_CELL",
+      "confidence": "HIGH",
+      "notes": "Cell D22 (merged D22:E22). Label: NPSH REQUERIDO (m). Hardcoded value, no formula."
+    },
+    "flow_gpm": 770.5,
+    "flow_provenance": {
+      "source_workbook": "KEETP-60-DM-008 - HOJA DE ESPECIFICACION BOMBA 005PU001 REV C (1).xlsm",
+      "source_sheet": "005PU001",
+      "source_location": "C28",
+      "source_type": "WORKBOOK_TEXT",
+      "confidence": "HIGH",
+      "notes": "Text cell C28: 'LA BOMBA CUMPLE CON LAS CONDICIONES DE FLUJO (770.50 GPM @ 253.8 TDH)'. Reference flow from pump curve note."
+    },
+    "duty_tdh_ft": 253.8,
+    "duty_tdh_provenance": {
+      "source_workbook": "KEETP-60-DM-008 - HOJA DE ESPECIFICACION BOMBA 005PU001 REV C (1).xlsm",
+      "source_sheet": "005PU001",
+      "source_location": "C28",
+      "source_type": "WORKBOOK_TEXT",
+      "confidence": "HIGH",
+      "notes": "Text cell C28: 'LA BOMBA CUMPLE CON LAS CONDICIONES DE FLUJO (770.50 GPM @ 253.8 TDH)'. Reference TDH from pump curve note. Discrepancy with calculated TDH (195.55 ft)."
+    },
+    "speed_rpm": 3550.0,
+    "speed_provenance": {
+      "source_workbook": "KEETP-60-DM-008 - HOJA DE ESPECIFICACION BOMBA 005PU001 REV C (1).xlsm",
+      "source_sheet": "RESUMEN PARA PDF",
+      "source_location": "Embedded image image8.png; top-left anchor A64",
+      "source_type": "EMBEDDED_CURVE_IMAGE",
+      "confidence": "MEDIUM",
+      "notes": "Pump curve 11294-0 (Goulds 3196LTi) embedded image. Cell D24 shows 3600 RPM (pump nameplate). Cannot verify image content programmatically; 3550 rpm per prior workbook audit."
+    },
+    "impeller_diameter_mm": 190.0,
+    "impeller_provenance": {
+      "source_workbook": "KEETP-60-DM-008 - HOJA DE ESPECIFICACION BOMBA 005PU001 REV C (1).xlsm",
+      "source_sheet": "005PU001",
+      "source_location": "D21",
+      "source_type": "WORKBOOK_CELL",
+      "confidence": "HIGH",
+      "notes": "Cell D21 (merged D21:E21). Label: 'O IMPULSOR (mm)'."
+    },
+    "curve_reference": "11294-0",
+    "curve_provenance": {
+      "source_workbook": "KEETP-60-DM-008 - HOJA DE ESPECIFICACION BOMBA 005PU001 REV C (1).xlsm",
+      "source_sheet": "005PU001",
+      "source_location": "D25",
+      "source_type": "WORKBOOK_CELL",
+      "confidence": "HIGH",
+      "notes": "Cell D25 (merged D25:E25). Label: 'NUMERO DE CURVA'. Goulds 3196LTi curve."
+    }
+  },
+  "pump_impeller_diameter_mm": 190.0,
+  "pump_impeller_provenance": {
+    "source_workbook": "KEETP-60-DM-008 - HOJA DE ESPECIFICACION BOMBA 005PU001 REV C (1).xlsm",
+    "source_sheet": "005PU001",
+    "source_location": "D21",
+    "source_type": "WORKBOOK_CELL",
+    "confidence": "HIGH",
+    "notes": "Cell D21 (merged D21:E21). Same cell as reference impeller. Operating impeller diameter."
+  },
   "pump_efficiency": 0.72,
   "motor_efficiency": null,
   "pump_rpm": 3600.0,
@@ -50,7 +111,6 @@
   "service_factor": 1.0,
   "number_of_stages": 1,
   "number_of_suction_eyes": 1,
-
   "legacy_f_discharge": 0.0272,
   "legacy_f_suction_method": "64/Re"
 }

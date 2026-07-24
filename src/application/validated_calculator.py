@@ -9,7 +9,18 @@ import math
 from src.infrastructure.input_loader import WorkbookInputs, create_workbook_inputs
 from src.domain.units import Q_, ureg
 from src.domain.friction import get_friction_factor
-from src.domain.npsh import NPSHInputs, calculate_npsha
+from src.domain.npsh import (
+    NPSHInputs, calculate_npsha, evaluate_npsh_margin,
+    convert_npshr_to_ft, check_npshr_reference_identity,
+    NPSH_MARGIN_CALCULATED,
+    NPSH_MARGIN_NOT_EVALUABLE_MISSING_NPSHR,
+    NPSH_MARGIN_NOT_CLASSIFIED_NO_POLICY,
+    NPSHR_REFERENCE_INCOMPLETE,
+    NPSHR_REFERENCE_MISMATCH,
+    NPSHR_REFERENCE_MATCHED,
+    NPSH_MARGIN_NOT_EVALUABLE_REFERENCE_INCOMPLETE,
+    NPSH_MARGIN_NOT_EVALUABLE_REFERENCE_MISMATCH,
+)
 from src.domain.power import (
     hydraulic_power_hp, shaft_power_hp, shaft_power_kw,
     torque_lbft, specific_speed_us as ss_us,
@@ -119,6 +130,20 @@ class ValidatedResults:
     stage_count: int = 1
     suction_eye_count: int = 1
     diameter_status: str = "OK"
+    # NPSHr integration
+    npshr_source_value: Optional[float] = None
+    npshr_source_unit: Optional[str] = None
+    npshr_ft: Optional[float] = None
+    npshr_reference_status: Optional[str] = None
+    npshr_reference_missing_fields: list = field(default_factory=list)
+    npshr_reference_mismatched_fields: list = field(default_factory=list)
+    npsh_margin_ft: Optional[float] = None
+    npsh_availability_ratio: Optional[float] = None
+    npsh_margin_fraction: Optional[float] = None
+    npsh_margin_calculation_status: Optional[str] = None
+    npsh_margin_acceptance_status: Optional[str] = None
+    npsh_margin_warnings: list = field(default_factory=list)
+    npshr_traceability: Optional[dict] = None
 
 
 def calculate_validated(inputs: WorkbookInputs = None) -> ValidatedResults:
@@ -280,6 +305,97 @@ def calculate_validated(inputs: WorkbookInputs = None) -> ValidatedResults:
     npsha_ft = npsha_from_surface_ft
     npsha_m = npsha_ft * _FT_TO_M
 
+    # --- NPSHr integration (guarded by reference identity) ---
+    npshr_source_value = None
+    npshr_source_unit = None
+    npshr_ft_val = None
+    npshr_reference_status = None
+    npshr_reference_missing = []
+    npshr_reference_mismatched = []
+    npsh_margin_ft_val = None
+    npsh_availability_ratio_val = None
+    npsh_margin_fraction_val = None
+    npsh_margin_calc_status = None
+    npsh_margin_accept_status = None
+    npsh_margin_warn = []
+    npshr_traceability = None
+
+    if inputs.npshr is None:
+        # NPSHr not provided - use existing contract
+        margin_result = evaluate_npsh_margin(npsha_ft, None)
+        npsh_margin_ft_val = margin_result.npsh_margin_ft
+        npsh_availability_ratio_val = margin_result.npsh_availability_ratio
+        npsh_margin_fraction_val = margin_result.npsh_margin_fraction
+        npsh_margin_calc_status = margin_result.calculation_status
+        npsh_margin_accept_status = margin_result.acceptance_status
+        npsh_margin_warn = margin_result.warnings
+    else:
+        npshr_ref = inputs.npshr
+        npshr_source_value = npshr_ref.value
+        npshr_source_unit = npshr_ref.unit
+        npshr_ft_val = convert_npshr_to_ft(npshr_ref.value, npshr_ref.unit)
+
+        # Check reference identity
+        ref_check = check_npshr_reference_identity(
+            operating_flow_gpm=Q,
+            operating_tdh_ft=tdh_ft,
+            operating_speed_rpm=_N,
+            operating_impeller_diameter_mm=inputs.pump_impeller_diameter_mm,
+            reference_flow_gpm=npshr_ref.flow_gpm,
+            reference_tdh_ft=npshr_ref.duty_tdh_ft,
+            reference_speed_rpm=npshr_ref.speed_rpm,
+            reference_impeller_diameter_mm=npshr_ref.impeller_diameter_mm,
+        )
+        npshr_reference_status = ref_check.status
+        npshr_reference_missing = ref_check.missing_fields
+        npshr_reference_mismatched = ref_check.mismatched_fields
+
+        # Build full traceability dict from all provenance info
+        def _dump_prov(p):
+            if p is None:
+                return None
+            return p.model_dump() if hasattr(p, 'model_dump') else dict(p)
+
+        npshr_traceability = {
+            "source_value": npshr_ref.value,
+            "source_unit": npshr_ref.unit,
+            "converted_ft": npshr_ft_val,
+            "value_provenance": _dump_prov(npshr_ref.value_provenance),
+            "flow_gpm": npshr_ref.flow_gpm,
+            "flow_provenance": _dump_prov(npshr_ref.flow_provenance),
+            "duty_tdh_ft": npshr_ref.duty_tdh_ft,
+            "duty_tdh_provenance": _dump_prov(npshr_ref.duty_tdh_provenance),
+            "speed_rpm": npshr_ref.speed_rpm,
+            "speed_provenance": _dump_prov(npshr_ref.speed_provenance),
+            "impeller_diameter_mm": npshr_ref.impeller_diameter_mm,
+            "impeller_provenance": _dump_prov(npshr_ref.impeller_provenance),
+            "curve_reference": npshr_ref.curve_reference,
+            "curve_provenance": _dump_prov(npshr_ref.curve_provenance),
+        }
+
+        if npshr_reference_status == NPSHR_REFERENCE_INCOMPLETE:
+            npsh_margin_ft_val = None
+            npsh_availability_ratio_val = None
+            npsh_margin_fraction_val = None
+            npsh_margin_calc_status = NPSH_MARGIN_NOT_EVALUABLE_REFERENCE_INCOMPLETE
+            npsh_margin_accept_status = NPSH_MARGIN_NOT_EVALUABLE_REFERENCE_INCOMPLETE
+            npsh_margin_warn = ref_check.warnings
+        elif npshr_reference_status == NPSHR_REFERENCE_MISMATCH:
+            npsh_margin_ft_val = None
+            npsh_availability_ratio_val = None
+            npsh_margin_fraction_val = None
+            npsh_margin_calc_status = NPSH_MARGIN_NOT_EVALUABLE_REFERENCE_MISMATCH
+            npsh_margin_accept_status = NPSH_MARGIN_NOT_EVALUABLE_REFERENCE_MISMATCH
+            npsh_margin_warn = ref_check.warnings
+        else:  # NPSHR_REFERENCE_MATCHED
+            margin_result = evaluate_npsh_margin(npsha_ft, npshr_ft_val)
+            npsh_margin_ft_val = margin_result.npsh_margin_ft
+            npsh_availability_ratio_val = margin_result.npsh_availability_ratio
+            npsh_margin_fraction_val = margin_result.npsh_margin_fraction
+            npsh_margin_calc_status = margin_result.calculation_status
+            npsh_margin_accept_status = margin_result.acceptance_status
+            npsh_margin_warn = margin_result.warnings
+
     # --- POWER (uses TDH surface-to-surface) ---
     hyd_hp = hydraulic_power_hp(Q, tdh_ft, sg)
     sh_hp = shaft_power_hp(hyd_hp, inputs.pump_efficiency)
@@ -349,6 +465,19 @@ def calculate_validated(inputs: WorkbookInputs = None) -> ValidatedResults:
         npsh_margin_status=npsh_surface_result.status,
         npsha_equivalence_diff=npsha_equivalence_diff,
         npsha_equivalence_status=npsha_equivalence_status,
+        npshr_source_value=npshr_source_value,
+        npshr_source_unit=npshr_source_unit,
+        npshr_ft=npshr_ft_val,
+        npshr_reference_status=npshr_reference_status,
+        npshr_reference_missing_fields=npshr_reference_missing,
+        npshr_reference_mismatched_fields=npshr_reference_mismatched,
+        npsh_margin_ft=npsh_margin_ft_val,
+        npsh_availability_ratio=npsh_availability_ratio_val,
+        npsh_margin_fraction=npsh_margin_fraction_val,
+        npsh_margin_calculation_status=npsh_margin_calc_status,
+        npsh_margin_acceptance_status=npsh_margin_accept_status,
+        npsh_margin_warnings=npsh_margin_warn,
+        npshr_traceability=npshr_traceability,
         npsha_components={
             "surface_absolute_pressure_psia": npsh_surface_result.p_surface_abs_psi,
             "surface_pressure_head_ft": npsh_surface_result.pressure_head_ft,

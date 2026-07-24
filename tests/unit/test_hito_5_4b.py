@@ -377,7 +377,7 @@ class TestHito54BDatasetJson(unittest.TestCase):
         import json, hashlib
         with open(inputs.dataset_path) as f:
             raw = json.load(f)
-        meta_keys = {'dataset_version', 'dataset_hash', 'description', 'source_workbook'}
+        meta_keys = {'dataset_version', 'dataset_hash', 'description'}
         payload = {k: v for k, v in raw.items() if k not in meta_keys}
         payload_bytes = json.dumps(payload, indent=2, sort_keys=True).encode()
         expected_hash = hashlib.sha256(payload_bytes).hexdigest()[:12]

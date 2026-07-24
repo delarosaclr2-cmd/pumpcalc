@@ -2,11 +2,22 @@
 NPSH module - Net Positive Suction Head calculations.
 """
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Optional, Literal
-from src.domain.units import Q_, ureg, psi_to_ft_h2o, ft_h2o_to_ft_fluid
+import math
+from src.domain.units import Q_, ureg, psi_to_ft_h2o, ft_h2o_to_ft_fluid, m_to_ft
 
 NPSH_MARGIN_NOT_EVALUABLE = "NPSH_MARGIN_NOT_EVALUABLE"
+NPSH_MARGIN_CALCULATED = "NPSH_MARGIN_CALCULATED"
+NPSH_MARGIN_NOT_EVALUABLE_MISSING_NPSHR = "NPSH_MARGIN_NOT_EVALUABLE_MISSING_NPSHR"
+NPSH_MARGIN_NOT_CLASSIFIED_NO_POLICY = "NPSH_MARGIN_NOT_CLASSIFIED_NO_POLICY"
+
+# Reference identity check constants
+NPSHR_REFERENCE_INCOMPLETE = "NPSHR_REFERENCE_INCOMPLETE"
+NPSHR_REFERENCE_MISMATCH = "NPSHR_REFERENCE_MISMATCH"
+NPSHR_REFERENCE_MATCHED = "NPSHR_REFERENCE_MATCHED"
+NPSH_MARGIN_NOT_EVALUABLE_REFERENCE_INCOMPLETE = "NPSH_MARGIN_NOT_EVALUABLE_REFERENCE_INCOMPLETE"
+NPSH_MARGIN_NOT_EVALUABLE_REFERENCE_MISMATCH = "NPSH_MARGIN_NOT_EVALUABLE_REFERENCE_MISMATCH"
 
 PressureType = Literal["absolute", "gauge", "vacuum"]
 
@@ -68,6 +79,124 @@ class NPSHResult:
     def __post_init__(self):
         if self.warnings is None:
             self.warnings = []
+
+
+@dataclass
+class NPSHMarginResult:
+    """NPSH margin evaluation result."""
+    npsha_ft: float
+    npshr_ft: Optional[float]
+    npsh_margin_ft: Optional[float]
+    npsh_availability_ratio: Optional[float]
+    npsh_margin_fraction: Optional[float]
+    calculation_status: str
+    acceptance_status: str
+    warnings: list = field(default_factory=list)
+
+
+@dataclass
+class NPSHReferenceCheckResult:
+    """Result of checking NPSHr reference identity against operating conditions."""
+    status: str
+    missing_fields: list
+    mismatched_fields: list
+    warnings: list
+
+
+def convert_npshr_to_ft(
+    value: float,
+    unit: Literal["ft", "m"],
+) -> float:
+    """Convert NPSHr value to feet.
+
+    Args:
+        value: NPSHr value (must be finite and > 0)
+        unit: Unit of the value ('ft' or 'm')
+
+    Returns:
+        Value converted to feet
+
+    Raises:
+        ValueError: If value is not finite/positive or unit is unknown
+    """
+    if not math.isfinite(value) or value <= 0:
+        raise ValueError(f"NPSHr value must be finite and > 0, got {value}")
+    if unit == "ft":
+        return value
+    elif unit == "m":
+        return m_to_ft(value)
+    else:
+        raise ValueError(f"Unit must be 'ft' or 'm', got '{unit}'")
+
+
+def check_npshr_reference_identity(
+    *,
+    operating_flow_gpm: float,
+    operating_tdh_ft: float,
+    operating_speed_rpm: float,
+    operating_impeller_diameter_mm: Optional[float],
+    reference_flow_gpm: Optional[float],
+    reference_tdh_ft: Optional[float],
+    reference_speed_rpm: Optional[float],
+    reference_impeller_diameter_mm: Optional[float],
+) -> NPSHReferenceCheckResult:
+    """Check whether NPSHr reference conditions match operating conditions.
+
+    Compares four parameter pairs (flow, TDH, speed, impeller diameter).
+    If any field is missing from a pair, the reference is INCOMPLETE.
+    If all fields are present but any differ, the reference is MISMATCHED.
+    Only when all four pairs match exactly is the reference MATCHED.
+
+    Uses math.isclose with strict tolerance (rel_tol=1e-9) to avoid
+    false positives from floating-point representation differences.
+    """
+    warnings = []
+    missing_fields = []
+    mismatched_fields = []
+
+    # Define pairs: (operating_field, reference_field, field_name)
+    pairs = [
+        (operating_flow_gpm, reference_flow_gpm, "flow_gpm"),
+        (operating_tdh_ft, reference_tdh_ft, "tdh_ft"),
+        (operating_speed_rpm, reference_speed_rpm, "speed_rpm"),
+        (operating_impeller_diameter_mm, reference_impeller_diameter_mm, "impeller_diameter_mm"),
+    ]
+
+    # Check for missing fields
+    for op_val, ref_val, name in pairs:
+        if op_val is None:
+            missing_fields.append(f"operating_{name}")
+        if ref_val is None:
+            missing_fields.append(f"reference_{name}")
+
+    if missing_fields:
+        return NPSHReferenceCheckResult(
+            status=NPSHR_REFERENCE_INCOMPLETE,
+            missing_fields=missing_fields,
+            mismatched_fields=[],
+            warnings=["Reference conditions incomplete: missing " + ", ".join(missing_fields)],
+        )
+
+    # Check for mismatched fields
+    for op_val, ref_val, name in pairs:
+        if not math.isclose(op_val, ref_val, rel_tol=1e-9):
+            mismatched_fields.append(name)
+            warnings.append(f"{name}: operating={op_val} vs reference={ref_val}")
+
+    if mismatched_fields:
+        return NPSHReferenceCheckResult(
+            status=NPSHR_REFERENCE_MISMATCH,
+            missing_fields=[],
+            mismatched_fields=mismatched_fields,
+            warnings=warnings,
+        )
+
+    return NPSHReferenceCheckResult(
+        status=NPSHR_REFERENCE_MATCHED,
+        missing_fields=[],
+        mismatched_fields=[],
+        warnings=["Reference conditions match operating conditions"],
+    )
 
 
 def npsha_legacy(
@@ -151,7 +280,7 @@ def calculate_npsha(inputs: NPSHInputs) -> NPSHResult:
     status = "OK"
     if npsha_ft < 0:
         status = "NEGATIVE_NPSH"
-        warnings.append("NPSHa is negative - cavitation certain")
+        warnings.append("NPSHa is negative; physical interpretation requires engineering review")
     else:
         status = "NPSH_MARGIN_NOT_EVALUABLE"
         warnings.append("NPSHr not available - margin cannot be evaluated")
@@ -169,6 +298,63 @@ def calculate_npsha(inputs: NPSHInputs) -> NPSHResult:
         p_vapor_abs_psi=inputs.vapor_pressure_psi,
         status=status,
         warnings=warnings
+    )
+
+
+def evaluate_npsh_margin(
+    npsha_ft: float,
+    npshr_ft: Optional[float],
+) -> NPSHMarginResult:
+    """Evaluate NPSH margin between available and required NPSH.
+
+    Computes three metrics:
+      npsh_margin_ft        = npsha_ft - npshr_ft
+      npsh_availability_ratio = npsha_ft / npshr_ft
+      npsh_margin_fraction    = (npsha_ft - npshr_ft) / npshr_ft
+
+    Separates calculation status from acceptance status.
+    """
+    warnings = []
+
+    # Validate npsha_ft is finite
+    if not math.isfinite(npsha_ft):
+        raise ValueError(f"npsha_ft must be finite, got {npsha_ft}")
+
+    # Case: NPSHr not provided
+    if npshr_ft is None:
+        return NPSHMarginResult(
+            npsha_ft=npsha_ft,
+            npshr_ft=None,
+            npsh_margin_ft=None,
+            npsh_availability_ratio=None,
+            npsh_margin_fraction=None,
+            calculation_status=NPSH_MARGIN_NOT_EVALUABLE_MISSING_NPSHR,
+            acceptance_status=NPSH_MARGIN_NOT_EVALUABLE_MISSING_NPSHR,
+            warnings=["NPSHr not provided - margin cannot be evaluated"],
+        )
+
+    # Validate npshr_ft is finite and positive
+    if not math.isfinite(npshr_ft):
+        raise ValueError(f"npshr_ft must be finite, got {npshr_ft}")
+    if npshr_ft <= 0:
+        raise ValueError(f"npshr_ft must be > 0, got {npshr_ft}")
+
+    npsh_margin_ft = npsha_ft - npshr_ft
+    npsh_availability_ratio = npsha_ft / npshr_ft
+    npsh_margin_fraction = (npsha_ft - npshr_ft) / npshr_ft
+
+    if npsha_ft < 0:
+        warnings.append("NPSHa is negative; physical interpretation requires engineering review")
+
+    return NPSHMarginResult(
+        npsha_ft=npsha_ft,
+        npshr_ft=npshr_ft,
+        npsh_margin_ft=npsh_margin_ft,
+        npsh_availability_ratio=npsh_availability_ratio,
+        npsh_margin_fraction=npsh_margin_fraction,
+        calculation_status=NPSH_MARGIN_CALCULATED,
+        acceptance_status=NPSH_MARGIN_NOT_CLASSIFIED_NO_POLICY,
+        warnings=warnings,
     )
 
 
